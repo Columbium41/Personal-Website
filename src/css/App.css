@@ -15,14 +15,15 @@
     color: var(--navbar-link-hover);
 }
 .navbar-icon {
-    border: 2px solid black;
+    border: 2px solid #dedede;
+    padding: 0.1ch;
     border-radius: 50%;
     width: 50px;
     vertical-align: middle;
     transition: border-color 0.8s;
 }
 .navbar-icon:hover {
-    border-color: rgba(255, 255, 255, 0.87);
+    border-color: var(--navbar-link-hover);
 }
 
 .navbar-links {
@@ -37,3 +38,5 @@
     display: flex;
     gap: 1ch;
 }
+
+/* Header Styling */
