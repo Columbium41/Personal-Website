@@ -1,0 +1,39 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3ch 0 3ch;
+    font-size: 1.2rem;
+}
+.text-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.4s;
+}
+.text-link:hover {
+    color: var(--navbar-link-hover);
+}
+.navbar-icon {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50px;
+    vertical-align: middle;
+    transition: border-color 0.8s;
+}
+.navbar-icon:hover {
+    border-color: rgba(255, 255, 255, 0.87);
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 5ch;
+    padding: 1.5ch 0 1.5ch 0;
+}
+.icon-links {
+    display: flex;
+    gap: 1ch;
+}

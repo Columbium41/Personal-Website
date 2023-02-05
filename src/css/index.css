@@ -12,6 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --navbar-link-hover: #38e5da;
 }
 
 *,
@@ -23,5 +25,5 @@
 }
 
 @media (prefers-color-scheme: light) {
-  
+
 }
