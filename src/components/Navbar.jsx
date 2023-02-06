@@ -19,7 +19,7 @@ function Navbar() {
                 <li><a href="" className="text-link">Skills</a></li>
                 <li><a href="" className="text-link">Personal Projects</a></li>
                 <li><a href="" className="text-link">Contacts</a></li>
-                <li><a href="" className="text-link">Resume</a></li>
+                <li><a href="/src/data/CharleyLiu_Resume.pdf" className="text-link" download>Resume</a></li>
             </ul>
         </nav>
     )
