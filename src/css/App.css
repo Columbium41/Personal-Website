@@ -1,10 +1,32 @@
+/* General Styling */
+.w-100 {
+    width: 100%;
+}
+.section-header {
+    --underline-offset: 0.3ch;
+
+    text-decoration: underline;
+    text-decoration-color: #424242;
+    text-decoration-thickness: 0.25ch;
+    text-underline-offset: var(--underline-offset);
+    margin-bottom: calc(var(--underline-offset) + 0.2ch);
+}
+.text-section p {
+    text-indent: 1.5rem;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+
+
 /* Navbar Styling */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 3ch 0 3ch;
-    font-size: 1.2rem;
+    justify-content: space-around;
+    margin-bottom: 4ch;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
 }
 .text-link {
     text-decoration: none;
@@ -38,5 +60,56 @@
     display: flex;
     gap: 1ch;
 }
+.resume {
+    border: 1px solid var(--navbar-link-hover);
+    padding: 1.2ch;
+    border-radius: 5px;
+}
+
+
 
 /* Header Styling */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    gap: 4ch;
+}
+.typewriter-container {
+    text-align: center;
+    padding: 0.5ch 0;
+    background: #424242;
+    border-radius: 8px;
+}
+.typewriter-container span {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.typewriter {
+    color: red;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.profile h1 {
+    margin-bottom: 0.25ch;
+}
+.headshot {
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-bottom: 2.5ch;
+}
