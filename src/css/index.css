@@ -2,13 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
+  --dark-theme-bg-primary: #212121;
+  --dark-theme-bg-secondary: #424242;
+  --dark-theme-fg-primary: rgba(255, 255, 255, 0.87);
+  --dark-theme-fg-secondary: #ddc2ff;
+  --dark-theme-fg-varient: #03dac6;
+  --dark-theme-error: #cf6679;
+
+  --light-theme-bg-primary: #fef9f8;
+  --light-theme-bg-secondary: #d8e2dc;
+  --light-theme-fg-primary: #0d0d0d;
+  --light-theme-fg-secondary: #5805cc;
+  --light-theme-fg-varient: #355a5a;
+  --light-theme-error: #b00020;
+
   font-family: 'Montserrat', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +26,16 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --navbar-link-hover: #38e5da;
+  --bg-primary: var(--dark-theme-bg-primary);
+  --bg-secondary: var(--dark-theme-bg-secondary);
+  --fg-primary: var(--dark-theme-fg-primary);
+  --fg-secondary: var(--dark-theme-fg-secondary);
+  --fg-varient: var(--dark-theme-fg-varient);
+  --error: var(--dark-theme-error);
+
+  color-scheme: light dark;
+  color: var(--fg-primary);
+  background-color: var(--bg-primary);
 }
 
 *,
@@ -38,10 +57,13 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
-
-    --navbar-link-hover: #142ad2;
+    color-scheme: light;
+    --bg-primary: var(--light-theme-bg-primary);
+    --bg-secondary: var(--light-theme-bg-secondary);
+    --fg-primary: var(--light-theme-fg-primary);
+    --fg-secondary: var(--light-theme-fg-secondary);
+    --fg-varient: var(--light-theme-fg-varient);
+    --error: var(--light-theme-error);
   }
   .navbar-icon {
     border-color: black;

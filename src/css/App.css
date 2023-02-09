@@ -6,7 +6,7 @@
     --underline-offset: 0.3ch;
 
     text-decoration: underline;
-    text-decoration-color: #424242;
+    text-decoration-color: var(--bg-secondary);
     text-decoration-thickness: 0.25ch;
     text-underline-offset: var(--underline-offset);
     margin-bottom: calc(var(--underline-offset) + 0.2ch);
@@ -34,7 +34,7 @@
     transition: color 0.4s;
 }
 .text-link:hover {
-    color: var(--navbar-link-hover);
+    color: var(--fg-varient);
 }
 .navbar-icon {
     border: 2px solid #dedede;
@@ -45,7 +45,7 @@
     transition: border-color 0.8s;
 }
 .navbar-icon:hover {
-    border-color: var(--navbar-link-hover);
+    border-color: var(--fg-varient);
 }
 
 .navbar-links {
@@ -61,7 +61,7 @@
     gap: 1ch;
 }
 .resume {
-    border: 1px solid var(--navbar-link-hover);
+    border: 1px solid var(--fg-varient);
     padding: 1.2ch;
     border-radius: 5px;
 }
@@ -80,7 +80,7 @@
 .typewriter-container {
     text-align: center;
     padding: 0.5ch 0;
-    background: #424242;
+    background: var(--bg-secondary);
     border-radius: 8px;
 }
 .typewriter-container span {
@@ -88,7 +88,7 @@
     font-size: 1.2rem;
 }
 .typewriter {
-    color: red;
+    color: var(--fg-secondary);
 }
 
 .profile {
@@ -103,7 +103,7 @@
 .headshot {
     width: 120px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid var(--fg-primary);
 }
 
 
@@ -125,8 +125,9 @@
     text-align: center;
     padding: 1.5ch;
     gap: 1ch;
-    background: #424242;
+    background: var(--bg-secondary);
     border-radius: 10px;
+    cursor: default;
 
     transition: transform 0.25s;
     transition-timing-function: ease-out;
