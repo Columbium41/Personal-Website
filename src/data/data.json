@@ -1,7 +1,72 @@
 {
     "content": {
         "portfolio": {
-            
+            "skills": [
+                "HTML",
+                "CSS", 
+                "JavaScript",
+                "React",
+                "Node.js",
+                "Java",
+                "Python"
+            ],
+            "projects": {
+                "Expense_Tracker": {
+                    "repo_link": "https://github.com/Columbium41/Expense-Tracker",
+                    "topics": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "React",
+                        "Node.js"
+                    ],
+                    "description": "An Expense Tracker Web App built with the React Javascript Library",
+                    "date-created": "November 2022",
+                    "homepage": "https://columbium41-expense-tracker.netlify.app/"
+                },
+                "Maze_Solver": {
+                    "repo_link": "https://github.com/Columbium41/Maze-Solver",
+                    "topics": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "description": "A web-application that lets users create or generate their own mazes and solve them with various algorithms with visualization.",
+                    "date-created": "November 2022",
+                    "homepage": "https://columbium41.github.io/Maze-Solver/"
+                },
+                "Symphony_Bot": {
+                    "repo_link": "https://github.com/Columbium41/Symphony-Bot",
+                    "topics": [
+                        "JavaScript",
+                        "Node.js",
+                        "Discord API"
+                    ],
+                    "description": "A simple discord music bot written with Javascript and node.js",
+                    "date-created": "November 2021",
+                    "homepage": null
+                },
+                "Tic-Tac-Toe": {
+                    "repo_link": "https://github.com/Columbium41/TicTacToe-JS",
+                    "topics": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    ],
+                    "description": "A website that allows you to play TicTacToe against a CPU opponent",
+                    "date-created": "November 2022",
+                    "homepage": "https://columbium41.github.io/TicTacToe-JS/"
+                },
+                "Minesweeper": {
+                    "repo_link": "https://github.com/Columbium41/Minesweeper",
+                    "topics": [
+                        "Java"
+                    ],
+                    "description": "A simple minesweeper game written with Java using swing and AWT.",
+                    "date-created": "January 2021",
+                    "homepage": null
+                }
+            }
         },
         "typewriter_options": [
             "Computer Science Student", 

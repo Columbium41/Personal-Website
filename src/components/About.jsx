@@ -1,15 +1,17 @@
 import { Typewriter } from 'react-simple-typewriter';
+import SkillCard from './SkillCard';
 
-function About() {
-    const textOptions = [" Computer Science Student", " Aspiring Software Developer"];
+function About({ data }) {
+    const typewriterOptions = data.content.typewriter_options;
+    const skills = data.content.portfolio.skills;
 
     return (
         <div className="about">
             <div className="typewriter-container w-100">
-                <span>{'>'} Hello, I am a</span>
+                <span>{'>'} Hello, I am a </span>
                 <span className="typewriter">
                     <Typewriter 
-                        words={textOptions} 
+                        words={typewriterOptions} 
                         cursor={true}
                         cursorBlinking={false}
                         loop={true}
@@ -34,8 +36,17 @@ function About() {
                     I'm a first-year undergrad student at the University of Ottawa with a passion for desigining software.
                     Currently, I'm pursuing a 5 year Computer Science co-op degree while also learning web development.
                     My hobbies include Music, Chess, Badminton, and Rhythm Games.
-                    When I'm not doing academic work or enjoying leisure time, I like to work on fun and interesting projects.
+                    When I'm not doing academic work or enjoying leisure time, I like to work on fun and interesting projects to help expand my knowledge.
                 </p>
+            </div>
+
+            <div className="skills w-100">
+                <h2 className="section-header">Skills</h2>
+                <div className="icon-container">
+                    {skills.map((skill, index) => (
+                        <SkillCard skill={skill} key={index} />
+                    ))}
+                </div>
             </div>
         </div>
     );

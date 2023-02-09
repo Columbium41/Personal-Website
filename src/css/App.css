@@ -68,7 +68,7 @@
 
 
 
-/* Header Styling */
+/* Home Section Styling */
 .about {
     display: flex;
     flex-direction: column;
@@ -107,9 +107,37 @@
 }
 
 
+.icon {
+    width: 80px;
+}
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1ch;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5ch;
+    gap: 1ch;
+    background: #424242;
+    border-radius: 10px;
+
+    transition: transform 0.25s;
+    transition-timing-function: ease-out;
+}
+.skill-card:hover {
+    transform: translateY(-0.5ch);
+}
+
 
 /* Footer */
 footer {
     text-align: center;
-    margin-bottom: 2.5ch;
+    margin: 5ch 0 2.5ch 0;
 }
