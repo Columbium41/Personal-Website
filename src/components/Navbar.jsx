@@ -1,4 +1,7 @@
-function Navbar() {
+function Navbar({ isDarkTheme, setIsDarkTheme }) {
+    function toggleTheme() {
+        setIsDarkTheme(!isDarkTheme);
+    }
 
     return (
         <header>
@@ -18,6 +21,12 @@ function Navbar() {
                     <li><a href="" className="text-link">Home</a></li>
                     <li><a href="" className="text-link">Personal Projects</a></li>
                     <li><a href="/src/data/CharleyLiu_Resume.pdf" className="text-link resume" download>Resume</a></li>
+
+                    <div className={"theme-toggle " + ((isDarkTheme) ? "moon" : "sun")} onClick={toggleTheme}>
+                        <img 
+                        src={"/src/assets/" + ((isDarkTheme) ? "moon" : "sun") + ".svg"} 
+                        alt={((isDarkTheme) ? "moon" : "sun") + " logo"} />
+                    </div>
                 </ul>
             </nav>
         </header>

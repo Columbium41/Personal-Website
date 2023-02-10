@@ -11,7 +11,7 @@
 
   --light-theme-bg-primary: #fef9f8;
   --light-theme-bg-secondary: #d8e2dc;
-  --light-theme-fg-primary: #0d0d0d;
+  --light-theme-fg-primary: #000000;
   --light-theme-fg-secondary: #5805cc;
   --light-theme-fg-varient: #355a5a;
   --light-theme-error: #b00020;
@@ -36,6 +36,8 @@
   color-scheme: light dark;
   color: var(--fg-primary);
   background-color: var(--bg-primary);
+
+  transition-timing-function: ease-in;
 }
 
 *,

@@ -6,9 +6,30 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import useFetch from '/src/hooks/useFetch';
 import ErrorOverlay from '/src/components/ErrorOverlay';
 import LoadingOverlay from '/src/components/LoadingOverlay';
+import useThemeDetector from './hooks/useThemeDetector';
+import { useEffect } from 'react';
+
+function changeTheme(isDarkTheme) {
+  console.log("ran");
+  const documentElement = document.documentElement;
+  const theme = ((isDarkTheme) ? "dark" : "light");
+
+  documentElement.style.setProperty(`--bg-primary`, `var(--${theme}-theme-bg-primary)`);
+  documentElement.style.setProperty(`--bg-secondary`, `var(--${theme}-theme-bg-secondary)`);
+  documentElement.style.setProperty(`--fg-primary`, `var(--${theme}-theme-fg-primary)`);
+  documentElement.style.setProperty(`--fg-secondary`, `var(--${theme}-theme-fg-secondary)`);
+  documentElement.style.setProperty(`--fg-varient`, `var(--${theme}-theme-fg-varient)`);
+  documentElement.style.setProperty(`--error`, `var(--${theme}-theme-error)`);
+  documentElement.style.transition = 'color 0.5s, background-color 0.5s';
+}
 
 function App() {
   const {data: data, isFetching, fetchError} = useFetch('/src/data/data.json');
+  const {isDarkTheme, setIsDarkTheme} = useThemeDetector();
+
+  useEffect(() => {
+    changeTheme(isDarkTheme);
+  }, [isDarkTheme]);
 
   return (
     <div className="App">
@@ -18,7 +39,7 @@ function App() {
         
         {!isFetching && !fetchError &&
         <div className="app-content">
-          <Navbar />
+          <Navbar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
           <main className="main-content">
             <Routes>
               <Route exact path="/" element={<About data={data} />} />
