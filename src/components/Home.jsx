@@ -1,7 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter';
 import SkillCard from './SkillCard';
 
-function About({ data }) {
+function Home({ data }) {
     const typewriterOptions = data.content.typewriter_options;
     const skills = data.content.portfolio.skills;
 
@@ -52,4 +52,4 @@ function About({ data }) {
     );
 }
 
-export default About;
+export default Home;

@@ -1,6 +1,6 @@
 import './css/App.css';
 import Navbar from './components/Navbar';
-import About from './components/About';
+import Home from './components/Home';
 import Footer from './components/Footer';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import useFetch from '/src/hooks/useFetch';
@@ -41,7 +41,7 @@ function App() {
           <Navbar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
           <main className="main-content">
             <Routes>
-              <Route exact path="/" element={<About data={data} />} />
+              <Route exact path="/" element={<Home data={data} />} />
             </Routes>
           </main>
           <Footer />
