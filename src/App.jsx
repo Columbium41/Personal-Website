@@ -10,7 +10,6 @@ import useThemeDetector from './hooks/useThemeDetector';
 import { useEffect } from 'react';
 
 function changeTheme(isDarkTheme) {
-  console.log("ran");
   const documentElement = document.documentElement;
   const theme = ((isDarkTheme) ? "dark" : "light");
 
