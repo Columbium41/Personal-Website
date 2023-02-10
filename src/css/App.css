@@ -186,7 +186,6 @@ footer a {
     height: 25%;
     animation: 5s linear infinite spin;
 }
-
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -194,4 +193,17 @@ footer a {
     to {
         transform: rotate(360deg);
     }
+}
+
+
+
+/* Error Overlay */
+.error-overlay {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--error);
 }
