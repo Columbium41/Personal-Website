@@ -1,7 +1,11 @@
 import ProjectCard from "./ProjectCard";
+import { useEffect } from "react";
 
-function Projects({ data }) {
+function Projects({ data, setDocumentTitle }) {
     const projectsList = Object.entries(data.content.portfolio.projects);
+    useEffect(() => {
+        setDocumentTitle("Charley Liu - Projects");
+    }, [])
 
     return (
         <div className="projects-section">

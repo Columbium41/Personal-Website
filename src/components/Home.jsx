@@ -1,9 +1,13 @@
 import { Typewriter } from 'react-simple-typewriter';
+import { useEffect } from 'react';
 import SkillCard from './SkillCard';
 
-function Home({ data }) {
+function Home({ data, setDocumentTitle }) {
     const typewriterOptions = data.content.typewriter_options;
     const skills = data.content.portfolio.skills;
+    useEffect(() => {
+        setDocumentTitle("Charley Liu - Homepage");
+    }, []);
 
     return (
         <div className="about">

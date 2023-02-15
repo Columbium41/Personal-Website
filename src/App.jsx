@@ -10,6 +10,7 @@ import ErrorOverlay from '/src/components/ErrorOverlay';
 import LoadingOverlay from '/src/components/LoadingOverlay';
 import useThemeDetector from './hooks/useThemeDetector';
 import { useEffect } from 'react';
+import useDocumentTitle from './hooks/useDocumentTitle';
 
 function changeTheme(isDarkTheme) {
   const documentElement = document.documentElement;
@@ -27,6 +28,7 @@ function changeTheme(isDarkTheme) {
 function App() {
   const {data: data, isFetching, fetchError} = useFetch('/src/data/data.json');
   const {isDarkTheme, setIsDarkTheme} = useThemeDetector();
+  const {setDocumentTitle} = useDocumentTitle("");
 
   useEffect(() => {
     changeTheme(isDarkTheme);
@@ -43,9 +45,9 @@ function App() {
           <Navbar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
           <main>
             <Routes>
-              <Route exact path="/" element={<Home data={data} />} />
-              <Route exact path="/projects" element={<Projects data={data} />} />
-              <Route exact path="/projects/:id" element={<ProjectPage />} />
+              <Route exact path="/" element={<Home data={data} setDocumentTitle={setDocumentTitle} />} />
+              <Route exact path="/projects" element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} />
+              <Route exact path="/projects/:id" element={<ProjectPage setDocumentTitle={setDocumentTitle} />} />
             </Routes>
           </main>
           <Footer />
