@@ -16,6 +16,9 @@
     overflow-wrap: break-word;
     hyphens: auto;
 }
+.text-center {
+    text-align: center;
+}
 
 
 
@@ -99,12 +102,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    width: 600px;
     gap: 4ch;
 }
 .typewriter-container {
-    text-align: center;
     padding: 0.5ch 0;
     background: var(--bg-secondary);
     border-radius: 8px;
@@ -134,15 +134,15 @@
 
 
 .icon {
-    width: 80px;
+    width: 100px;
 }
-.icon-container {
+.card-container-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
-    gap: 1ch;
+    gap: var(--card-container-gap);
 }
 .skill-card {
     display: flex;
@@ -171,6 +171,51 @@ footer {
 footer a {
     color: var(--fg-secondary);
 }
+
+
+
+/* Projects Section */
+.card-container-grid {
+    margin-top: 3ch;
+    display: grid;
+    gap: 3ch 1ch;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+.project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    border-radius: 1ch;
+}
+.project-card:hover {
+    cursor: pointer;
+}
+.project-thumbnail {
+    justify-self: start;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 1ch 1ch 0 0;
+}
+.project-card-text {
+    padding: 1ch 0 1ch 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+
 
 /* Loading Overlay */
 .loading-overlay {

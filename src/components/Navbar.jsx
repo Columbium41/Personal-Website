@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar({ isDarkTheme, setIsDarkTheme }) {
     function toggleTheme() {
         setIsDarkTheme(!isDarkTheme);
@@ -18,8 +20,8 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                         </a>
                     </li>
 
-                    <li><a href="" className="text-link">Home</a></li>
-                    <li><a href="" className="text-link">Personal Projects</a></li>
+                    <li><Link to="/" className="text-link">Home</Link></li>
+                    <li><Link to="/projects" className="text-link">Projects</Link></li>
                     <li><a href="/src/data/CharleyLiu_Resume.pdf" className="text-link resume" download>Resume</a></li>
 
                     <div className={"theme-toggle " + ((isDarkTheme) ? "moon" : "sun")} onClick={toggleTheme}>

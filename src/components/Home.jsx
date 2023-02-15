@@ -7,7 +7,7 @@ function Home({ data }) {
 
     return (
         <div className="about">
-            <div className="typewriter-container w-100">
+            <div className="typewriter-container w-100 text-center">
                 <span>{'>'} Hello, I am a </span>
                 <span className="typewriter">
                     <Typewriter 
@@ -42,7 +42,7 @@ function Home({ data }) {
 
             <div className="skills w-100">
                 <h2 className="section-header">Skills</h2>
-                <div className="icon-container">
+                <div className="card-container-flex">
                     {skills.map((skill, index) => (
                         <SkillCard skill={skill} key={index} />
                     ))}

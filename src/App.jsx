@@ -1,6 +1,8 @@
 import './css/App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Projects from './components/Projects';
+import ProjectPage from './components/ProjectPage';
 import Footer from './components/Footer';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import useFetch from '/src/hooks/useFetch';
@@ -39,9 +41,11 @@ function App() {
         {!isFetching && !fetchError &&
         <div className="app-content">
           <Navbar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
-          <main className="main-content">
+          <main>
             <Routes>
               <Route exact path="/" element={<Home data={data} />} />
+              <Route exact path="/projects" element={<Projects data={data} />} />
+              <Route exact path="/projects/:id" element={<ProjectPage />} />
             </Routes>
           </main>
           <Footer />

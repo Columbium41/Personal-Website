@@ -31,7 +31,7 @@
                         "CSS",
                         "JavaScript"
                     ],
-                    "description": "A web-application that lets users create or generate their own mazes and solve them with various algorithms with visualization.",
+                    "description": "A web-application that lets users create, generate, and solve mazes.",
                     "date-created": "November 2022",
                     "homepage": "https://columbium41.github.io/Maze-Solver/"
                 },
