@@ -4,7 +4,7 @@ import { useEffect } from "react";
 function Projects({ data, setDocumentTitle }) {
     const projectsList = Object.entries(data.content.portfolio.projects);
     useEffect(() => {
-        setDocumentTitle("Charley Liu - Projects");
+        setDocumentTitle("Projects");
     }, [])
 
     return (

@@ -4,7 +4,7 @@ function useDocumentTitle(title) {
     const [documentTitle, setDocumentTitle] = useState(title);
 
     useEffect(() => {
-        document.title = documentTitle;
+        document.title = "Charley Liu | " + documentTitle;
     }, [documentTitle]);
 
     return {documentTitle, setDocumentTitle};

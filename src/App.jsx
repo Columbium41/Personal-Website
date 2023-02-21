@@ -28,7 +28,7 @@ function changeTheme(isDarkTheme) {
 function App() {
   const {data: data, isFetching, fetchError} = useFetch('/src/data/data.json');
   const {isDarkTheme, setIsDarkTheme} = useThemeDetector();
-  const {setDocumentTitle} = useDocumentTitle("");
+  const {setDocumentTitle} = useDocumentTitle("Homepage");
 
   useEffect(() => {
     changeTheme(isDarkTheme);

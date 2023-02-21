@@ -16,7 +16,7 @@ function ProjectPage({ data, setDocumentTitle }) {
     }
 
     useEffect(() => {
-        setDocumentTitle("Charley Liu - " + projectTitle.replace("_", " "));
+        setDocumentTitle(projectTitle.replace("_", " "));
     }, [])
 
     return (

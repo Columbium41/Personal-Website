@@ -6,7 +6,7 @@ function Home({ data, setDocumentTitle }) {
     const typewriterOptions = data.content.typewriter_options;
     const skills = data.content.portfolio.skills;
     useEffect(() => {
-        setDocumentTitle("Charley Liu - Homepage");
+        setDocumentTitle("Homepage");
     }, []);
 
     return (
