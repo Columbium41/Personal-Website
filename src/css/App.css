@@ -19,6 +19,9 @@
 .text-center {
     text-align: center;
 }
+.align-center {
+    align-self: center;
+}
 
 
 
@@ -70,16 +73,16 @@
 }
 
 .theme-toggle {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: var(--icon-padding);
     border-radius: 10px;
     border: 1.5px solid var(--fg-primary);
     transition: background 0.5s ease-in;
 }
 .theme-toggle img {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     position: relative;
     top: 50%;
     left: 50%;
@@ -194,12 +197,20 @@ footer a {
 .project-card:hover {
     cursor: pointer;
 }
-.project-thumbnail {
+.project-thumbnail-card {
     justify-self: start;
     max-width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 1ch 1ch 0 0;
+}
+.project-thumbnail {
+    border-radius: 1ch;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px groove var(--fg-primary);
 }
 .project-card-text {
     padding: 1ch 0 1ch 0;
@@ -213,6 +224,54 @@ footer a {
     text-decoration: none;
     color: inherit;
     font-size: inherit;
+}
+.back-to-projects {
+    color: var(--fg-varient);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.back-to-projects::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--fg-primary);
+    transition: width 0.25s ease-out;
+}
+.back-to-projects:hover::before {
+    width: 100%;
+}
+.project-metadata-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5ch;
+}
+.project-metadata * {
+    display: inline;
+}
+.project-metadata h4 {
+    margin-left: 1rem;
+    background-color: var(--bg-secondary);
+    padding: 0.25ch;
+    color: var(--fg-secondary);
+}
+.project-metadata h4 + p::before {
+    content: " ";
+}
+.project-metadata a {
+    vertical-align: middle;
+}
+.topic-item:not(:last-of-type)::after {
+    content: ", ";
+}
+.project-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2ch;
+    align-items: flex-start;
 }
 
 

@@ -9,7 +9,7 @@ function ProjectCard({ project }) {
             <div className="project-card">
                 <img src={"/src/assets/" + projectTitle.toLowerCase() + ".png"} 
                     alt={projectTitle + " thumbnail"} 
-                    className="project-thumbnail" />
+                    className="project-thumbnail-card" />
                 
                 <div className="project-card-text">
                     <h3>{projectTitle.replace("_", " ")}</h3>

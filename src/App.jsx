@@ -47,7 +47,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home data={data} setDocumentTitle={setDocumentTitle} />} />
               <Route exact path="/projects" element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} />
-              <Route exact path="/projects/:id" element={<ProjectPage setDocumentTitle={setDocumentTitle} />} />
+              <Route exact path="/projects/:id" element={<ProjectPage data={data} setDocumentTitle={setDocumentTitle} />} />
             </Routes>
           </main>
           <Footer />
