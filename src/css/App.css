@@ -47,15 +47,19 @@
     color: var(--fg-varient);
 }
 .navbar-icon {
-    border: 2px solid var(--fg-primary);
-    padding: 0.1ch;
     border-radius: 50%;
-    width: 50px;
+    width: 55px;
     vertical-align: middle;
-    transition: border-color 0.8s;
+    transition: filter 0.3s, background 0.3s;
 }
-.navbar-icon:hover {
-    border-color: var(--fg-varient);
+.dark-hover:hover {
+    filter: brightness(75%);
+}
+.light-hover-bg:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.dark-hover-bg:hover {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .navbar-links {

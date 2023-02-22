@@ -13,10 +13,10 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                 <ul className="navbar-links">
                     <li className="icon-links">
                         <a href="https://github.com/Columbium41" target="_blank">
-                            <img src="/src/assets/github.svg" alt="github" className="navbar-icon" />
+                            <img src="/src/assets/github.svg" alt="github" className={"navbar-icon " + ((isDarkTheme) ? "light-hover-bg" : "dark-hover-bg")} />
                         </a>
                         <a href="https://www.linkedin.com/in/charleyliu-uo/" target="_blank">
-                            <img src="/src/assets/linkedin.svg" alt="linkedin" className="navbar-icon" />
+                            <img src="/src/assets/linkedin.svg" alt="linkedin" className="navbar-icon dark-hover" />
                         </a>
                     </li>
 
