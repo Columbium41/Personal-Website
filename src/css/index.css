@@ -42,6 +42,17 @@
   transition-timing-function: ease-in;
 }
 
+::-webkit-scrollbar {
+  width: 0.4vw;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--fg-varient);
+  border-radius: 0.4vw;
+}
+
 *,
 *::before,
 *::after {
