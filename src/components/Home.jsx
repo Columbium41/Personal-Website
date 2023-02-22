@@ -1,6 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { useEffect } from 'react';
 import SkillCard from './SkillCard';
+import { motion } from 'framer-motion';
 
 function Home({ data, setDocumentTitle }) {
     const typewriterOptions = data.content.typewriter_options;
@@ -10,7 +11,12 @@ function Home({ data, setDocumentTitle }) {
     }, []);
 
     return (
-        <div className="about">
+        <motion.div 
+          className="about"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          exit={{opacity: 0}}
+        >
             <div className="typewriter-container w-100 text-center">
                 <span>{'>'} Hello, I am a </span>
                 <span className="typewriter">
@@ -52,7 +58,7 @@ function Home({ data, setDocumentTitle }) {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

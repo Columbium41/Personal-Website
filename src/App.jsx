@@ -1,17 +1,14 @@
 import './css/App.css';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import ProjectPage from './components/ProjectPage';
 import Footer from './components/Footer';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import useFetch from '/src/hooks/useFetch';
 import ErrorOverlay from '/src/components/ErrorOverlay';
 import LoadingOverlay from '/src/components/LoadingOverlay';
 import useThemeDetector from './hooks/useThemeDetector';
 import { useEffect } from 'react';
+import AnimatedRoutes from './components/AnimatedRoutes';
 import useDocumentTitle from './hooks/useDocumentTitle';
-import NotFound from './components/NotFound';
 
 function changeTheme(isDarkTheme) {
   const documentElement = document.documentElement;
@@ -45,12 +42,7 @@ function App() {
         <div className="app-content">
           <Navbar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
           <main>
-            <Routes>
-              <Route exact path="/" element={<Home data={data} setDocumentTitle={setDocumentTitle} />} />
-              <Route exact path="/projects" element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} />
-              <Route exact path="/projects/:id" element={<ProjectPage data={data} setDocumentTitle={setDocumentTitle} />} />
-              <Route path="*" element={<NotFound setDocumentTitle={setDocumentTitle} />} />
-            </Routes>
+            <AnimatedRoutes data={data} setDocumentTitle={setDocumentTitle} />
           </main>
           <Footer />
         </div>}

@@ -1,12 +1,12 @@
 {
-  "homepage": "https://Columbium41.github.io/Personal-Website",
+  "homepage": "http://Columbium41.github.io/Personal-Website",
   "name": "personal-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

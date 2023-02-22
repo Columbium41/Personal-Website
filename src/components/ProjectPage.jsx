@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import NotFound from "./NotFound";
+import { motion } from 'framer-motion';
 
 function ProjectPage({ data, setDocumentTitle }) {
     const params = useParams();
@@ -23,7 +24,11 @@ function ProjectPage({ data, setDocumentTitle }) {
     }, [])
 
     return (
-        <div>
+        <motion.div
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          exit={{opacity: 0}}
+        >
             { (projectData !== "") && 
             <div className="project-page">
                 <h3 className="back-to-projects" onClick={() => {navigate("/projects")}}>
@@ -63,7 +68,7 @@ function ProjectPage({ data, setDocumentTitle }) {
                 ))}
             </div>}
             {(projectData === "") && <NotFound setDocumentTitle={setDocumentTitle} />}
-        </div>
+        </motion.div>
     )
 }
 
