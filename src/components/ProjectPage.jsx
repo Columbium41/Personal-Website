@@ -17,7 +17,9 @@ function ProjectPage({ data, setDocumentTitle }) {
     }
 
     useEffect(() => {
-        setDocumentTitle(projectTitle.replace("_", " "));
+        if (projectData !== '') {
+            setDocumentTitle(projectTitle.replace("_", " "));
+        }
     }, [])
 
     return (
