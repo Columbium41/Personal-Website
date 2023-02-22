@@ -19,7 +19,7 @@ function LoadingOverlay() {
 
     return (
         <div className="loading-overlay">
-            <img src="/src/assets/react.svg" alt="React logo" />
+            <img src="images/react.svg" alt="React logo" />
             <h2>{ loadingText }</h2>
         </div>
     )

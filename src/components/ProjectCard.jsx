@@ -7,7 +7,7 @@ function ProjectCard({ project }) {
     return (
         <Link to={"/projects/" + projectTitle} className="card-link">
             <div className="project-card">
-                <img src={"/src/assets/" + projectTitle.toLowerCase() + ".png"} 
+                <img src={"images/" + projectTitle.toLowerCase() + ".png"} 
                     alt={projectTitle + " thumbnail"} 
                     className="project-thumbnail-card" />
                 

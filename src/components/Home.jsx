@@ -36,7 +36,7 @@ function Home({ data, setDocumentTitle }) {
                     <h1>Charley Liu</h1>
                     <p className="occupation">Computer Science Student</p>
                 </div>
-                <img src="/src/assets/headshot.jpeg" alt="headshot" className="headshot" />
+                <img src="images/headshot.jpeg" alt="headshot" className="headshot" />
             </div>
             
             <div className="text-section w-100">
