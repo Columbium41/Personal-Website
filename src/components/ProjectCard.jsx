@@ -5,9 +5,9 @@ function ProjectCard({ project }) {
     const projectData = project[1];
 
     return (
-        <Link to={"/projects/" + projectTitle} className="card-link">
+        <Link to={"/Personal-Website/projects/" + projectTitle} className="card-link">
             <div className="project-card">
-                <img src={"images/" + projectTitle.toLowerCase() + ".png"} 
+                <img src={"/Personal-Website/images/" + projectTitle.toLowerCase() + ".png"} 
                     alt={projectTitle + " thumbnail"} 
                     className="project-thumbnail-card" />
                 

@@ -1,13 +1,13 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import NotFound from "./NotFound";
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 function ProjectPage({ data, setDocumentTitle }) {
     const params = useParams();
     const projectTitle = params.id;
     const projectsList = Object.entries(data.content.portfolio.projects);
-    const navigate = useNavigate();
     
     var projectData = '';
     
@@ -31,9 +31,11 @@ function ProjectPage({ data, setDocumentTitle }) {
         >
             { (projectData !== "") && 
             <div className="project-page">
-                <h3 className="back-to-projects" onClick={() => {navigate("/projects")}}>
-                    {'<'} Back to Projects
-                </h3>
+                <Link to={"/Personal-Website/projects"}>
+                    <h3 className="back-to-projects">
+                        {'<'} Projects
+                    </h3>
+                </Link>
 
                 <h2 className="align-center">{ projectTitle.replace("_", " ") }</h2>
                 <div className="text-section">

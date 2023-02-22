@@ -24,7 +24,7 @@ function changeTheme(isDarkTheme) {
 }
 
 function App() {
-  const {data: data, isFetching, fetchError} = useFetch('data/data.json');
+  const {data: data, isFetching, fetchError} = useFetch('/Personal-Website/data/data.json');
   const {isDarkTheme, setIsDarkTheme} = useThemeDetector();
   const {setDocumentTitle} = useDocumentTitle("Homepage");
 
