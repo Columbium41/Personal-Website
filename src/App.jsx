@@ -11,6 +11,7 @@ import LoadingOverlay from '/src/components/LoadingOverlay';
 import useThemeDetector from './hooks/useThemeDetector';
 import { useEffect } from 'react';
 import useDocumentTitle from './hooks/useDocumentTitle';
+import NotFound from './components/NotFound';
 
 function changeTheme(isDarkTheme) {
   const documentElement = document.documentElement;
@@ -48,6 +49,7 @@ function App() {
               <Route exact path="/" element={<Home data={data} setDocumentTitle={setDocumentTitle} />} />
               <Route exact path="/projects" element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} />
               <Route exact path="/projects/:id" element={<ProjectPage data={data} setDocumentTitle={setDocumentTitle} />} />
+              <Route path="*" element={<NotFound setDocumentTitle={setDocumentTitle} />} />
             </Routes>
           </main>
           <Footer />

@@ -169,16 +169,6 @@
 }
 
 
-/* Footer */
-footer {
-    text-align: center;
-    margin: 5ch 0 2.5ch 0;
-}
-footer a {
-    color: var(--fg-secondary);
-}
-
-
 
 /* Projects Section */
 .card-container-grid {
@@ -317,4 +307,23 @@ footer a {
     align-items: center;
     justify-content: center;
     color: var(--error);
+}
+
+
+
+/* Not Found Page */
+.not-found h2 {
+    margin-bottom: 1ch;
+    color: var(--error);
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 5ch 0 2.5ch 0;
+}
+footer a {
+    color: var(--fg-secondary);
 }
