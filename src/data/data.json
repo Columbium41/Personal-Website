@@ -12,7 +12,6 @@
             ],
             "projects": {
                 "Expense_Tracker": {
-                    "repo_link": "https://github.com/Columbium41/Expense-Tracker",
                     "topics": [
                         "HTML",
                         "CSS",
@@ -23,14 +22,16 @@
                     "description": "An Expense Tracker Web App built with the React Javascript Library",
                     "long_description": "An Expense Tracker Web App built with the React Javascript Library. Expense Tracker allows users to track their expenses using CRUD (Create, Read, Update, Delete) functions. User expense data is stored using JavaScript local storage.",
                     "date_created": "November 2022",
-                    "homepage": "https://columbium41-expense-tracker.netlify.app/",
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/216506537-6acf4fef-3789-42ff-a40a-99b24844949d.png",
                         "https://user-images.githubusercontent.com/75919484/220453686-610d407a-e0ce-4129-a09b-f2be4617c708.png"
-                    ]
+                    ],
+                    "links": {
+                        "Github": "https://github.com/Columbium41/Expense-Tracker",
+                        "Website": "https://columbium41-expense-tracker.netlify.app/"
+                    }
                 },
                 "Maze_Solver": {
-                    "repo_link": "https://github.com/Columbium41/Maze-Solver",
                     "topics": [
                         "HTML",
                         "CSS",
@@ -39,14 +40,16 @@
                     "description": "A web application that lets users create, generate, and solve mazes.",
                     "long_description": "A web application that lets users create, generate, and solve mazes with various Graph Theory algorithms. The web app utilizes HTML Canvas to display graphics and vanilla JavaScript to handle user interface and visualization.",
                     "date_created": "November 2022",
-                    "homepage": "https://columbium41.github.io/Maze-Solver/",
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/210094884-8bf8b19f-9673-44f7-b23a-6d7a619b009b.png",
                         "https://user-images.githubusercontent.com/75919484/210094888-275172f2-104f-4397-9b3d-ee2e613e12a8.png"
-                    ]
+                    ],
+                    "links": {
+                        "Github": "https://github.com/Columbium41/Maze-Solver",
+                        "Website": "https://columbium41.github.io/Maze-Solver/"
+                    }
                 },
                 "Symphony_Bot": {
-                    "repo_link": "https://github.com/Columbium41/Symphony-Bot",
                     "topics": [
                         "JavaScript",
                         "Node.js",
@@ -55,13 +58,15 @@
                     "description": "A simple discord music bot written in Javascript with the Node.js framework",
                     "long_description": "A simple discord music bot written in Javascript with the Node.js framework. The discord bot can play music and manage a queue of songs in a Discord voice channel.",
                     "date_created": "November 2021",
-                    "homepage": null,
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/220444988-69384c11-b7ca-4458-ac48-ab5374e99a4a.png"
-                    ]
+                    ],
+                    "links": {
+                        "Github": "https://github.com/Columbium41/Symphony-Bot",
+                        "Invite_Link": "https://discord.com/api/oauth2/authorize?client_id=908930909355511888&permissions=277062143040&scope=bot%20applications.commands"
+                    }
                 },
                 "Tic-Tac-Toe": {
-                    "repo_link": "https://github.com/Columbium41/TicTacToe-JS",
                     "topics": [
                         "HTML",
                         "CSS",
@@ -70,14 +75,16 @@
                     "description": "A website that allows users to play TicTacToe against a CPU opponent",
                     "long_description": "A website that allows users to play TicTacToe against a CPU opponent. There are 4 CPU difficulties included: Easy, Medium, Hard, and Impossible. The impossible CPU mode utilizes the Minimax Algorithm.",
                     "date_created": "November 2022",
-                    "homepage": "https://columbium41.github.io/TicTacToe-JS/",
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/202865064-ef22c7cd-c973-49c1-aefc-92bd823c7b8a.png",
                         "https://user-images.githubusercontent.com/75919484/202865159-a5c0663b-aeea-4ed5-b75b-730697408457.png"
-                    ]
+                    ],
+                    "links": {
+                        "Github": "https://github.com/Columbium41/TicTacToe-JS",
+                        "Website": "https://columbium41.github.io/TicTacToe-JS/"
+                    }
                 },
                 "Minesweeper": {
-                    "repo_link": "https://github.com/Columbium41/Minesweeper",
                     "topics": [
                         "Java",
                         "AWT & Swing"
@@ -85,11 +92,14 @@
                     "description": "A simple minesweeper game written with Java using swing and AWT.",
                     "long_description": "A simple minesweeper game written with Java using swing and AWT. The minesweeper application allows users to play a game of minesweeper in preset difficulties or create their own custom difficulty with set dimensions and number of mines.",
                     "date_created": "January 2021",
-                    "homepage": null,
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/220455167-95a54e0b-6bf7-4150-af28-b9a937b7a230.png",
                         "https://user-images.githubusercontent.com/75919484/220242010-8b2f7ee3-747e-4f7f-9dbe-a59fd216316c.png"
-                    ]
+                    ],
+                    "links": {
+                        "Github": "https://github.com/Columbium41/Minesweeper",
+                        "Download_JAR": "https://github.com/Columbium41/Minesweeper/releases/tag/v1.1"
+                    }
                 }
             }
         },

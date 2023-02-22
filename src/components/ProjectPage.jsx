@@ -15,6 +15,8 @@ function ProjectPage({ data, setDocumentTitle }) {
         }
     }
 
+    console.log(Object.entries(projectData.links));
+
     useEffect(() => {
         setDocumentTitle(projectTitle.replace("_", " "));
     }, [])
@@ -43,25 +45,14 @@ function ProjectPage({ data, setDocumentTitle }) {
                     ))}
                 </div>
 
-                {(projectData.repo_link !== null) && 
-                <div className="project-metadata">
-                    <h4>Github:</h4>
-                    <p>
-                        <a href={projectData.repo_link} target="_blank">
-                            { projectData.repo_link }
-                        </a>
-                    </p>
-                </div>}
-
-                {(projectData.homepage !== null) && 
-                <div className="project-metadata">
-                    <h4>Website:</h4>
-                    <p>
-                        <a href={projectData.homepage} target="_blank">
-                            { projectData.homepage }
-                        </a>
-                    </p>
-                </div>}
+                {Object.entries(projectData.links).map((array, index) => (
+                    <div className="project-metadata" key={index}>
+                        <h4>{ array[0].replace("_", " ") + ":" }</h4>
+                        <p>
+                            <a href={ array[1] } target="_blank" >{ array[1] }</a>
+                        </p>
+                    </div>
+                ))}
             </div>
                     
             {projectData.thumbnails.map((thumbnail, index) => (

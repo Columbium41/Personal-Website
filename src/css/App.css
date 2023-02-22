@@ -73,16 +73,15 @@
 }
 
 .theme-toggle {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     padding: var(--icon-padding);
     border-radius: 10px;
-    border: 1.5px solid var(--fg-primary);
     transition: background 0.5s ease-in;
 }
 .theme-toggle img {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     position: relative;
     top: 50%;
     left: 50%;
@@ -193,6 +192,7 @@ footer a {
     align-items: center;
     background-color: var(--bg-secondary);
     border-radius: 1ch;
+    border: 1px groove var(--fg-primary);
 }
 .project-card:hover {
     cursor: pointer;
@@ -249,13 +249,16 @@ footer a {
     flex-direction: column;
     gap: 0.5ch;
 }
-.project-metadata * {
+.project-metadata {
+    margin-left: 1rem;
+}
+.project-metadata h4,
+.project-metadata p {
     display: inline;
 }
 .project-metadata h4 {
-    margin-left: 1rem;
     background-color: var(--bg-secondary);
-    padding: 0.25ch;
+    padding: 0.25ch 0.5ch;
     color: var(--fg-secondary);
 }
 .project-metadata h4 + p::before {

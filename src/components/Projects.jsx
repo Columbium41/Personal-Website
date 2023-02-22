@@ -9,7 +9,7 @@ function Projects({ data, setDocumentTitle }) {
 
     return (
         <div className="projects-section">
-            <h2 className="text-center">Projects</h2>
+            <h1 className="text-center">Projects</h1>
             <div className="card-container-grid">
                 {projectsList.map((project) => (
                     <ProjectCard key={project} project={project} />
