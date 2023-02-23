@@ -9,7 +9,7 @@ function AnimatedRoutes({ data, setDocumentTitle }) {
     const location = useLocation();
 
     return (
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
                 <Route exact path="/Personal-Website/" element={<Home data={data} setDocumentTitle={setDocumentTitle} />} />
                 <Route exact path="/Personal-Website/projects" element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} />

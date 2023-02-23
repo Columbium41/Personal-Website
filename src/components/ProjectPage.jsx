@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import NotFound from "./NotFound";
-import { motion } from 'framer-motion';
+import AnimatedPage from "./AnimatedPage";
 import { Link } from "react-router-dom";
 
 function ProjectPage({ data, setDocumentTitle }) {
@@ -24,11 +24,7 @@ function ProjectPage({ data, setDocumentTitle }) {
     }, [])
 
     return (
-        <motion.div
-          initial={{opacity: 0}}
-          animate={{opacity: 1}}
-          exit={{opacity: 0}}
-        >
+        <AnimatedPage>
             { (projectData !== "") && 
             <div className="project-page">
                 <Link to={"/Personal-Website/projects"}>
@@ -70,7 +66,7 @@ function ProjectPage({ data, setDocumentTitle }) {
                 ))}
             </div>}
             {(projectData === "") && <NotFound setDocumentTitle={setDocumentTitle} />}
-        </motion.div>
+        </AnimatedPage>
     )
 }
 
