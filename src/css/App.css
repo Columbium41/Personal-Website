@@ -30,13 +30,25 @@
 
 
 /* Navbar Styling */
+header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    background: var(--bg-header);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+header + main {
+    margin-top: 4ch;
+}
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 4ch;
     font-family: 'Roboto';
     font-size: 1.1rem;
+    width: 900px;
+    margin: 0 auto;
 }
 .text-link {
     text-decoration: none;
@@ -48,7 +60,7 @@
 }
 .navbar-icon {
     border-radius: 50%;
-    width: 55px;
+    width: 50px;
     vertical-align: middle;
     transition: filter 0.3s, background 0.3s;
 }
@@ -68,7 +80,7 @@
     justify-content: space-between;
     list-style: none;
     gap: 5ch;
-    padding: 1.5ch 0 1.5ch 0;
+    padding: 1ch 0;
 }
 .icon-links {
     display: flex;
@@ -76,7 +88,7 @@
 }
 .resume {
     border: 1px solid var(--fg-varient);
-    padding: 1.2ch;
+    padding: 1ch 1.2ch;
     border-radius: 5px;
 }
 
