@@ -1,15 +1,21 @@
 import { motion } from 'framer-motion';
 
 const animation = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-    exit: { opacity: 0 },
-    transition: { duration: 0.25 }
+    initial: { opacity: 0, x: "-25vw" },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: "25vw" },
 }
 
 function AnimatedPage({ children, className }) {
     return (
-        <motion.div variants={animation} initial="initial" animate="animate" exit="exit" transition="transition" className={className}>
+        <motion.div 
+          className={className}
+          variants={animation} 
+          initial="initial" 
+          animate="animate" 
+          exit="exit" t
+          transition={{ duration: 0.4 }} 
+        >
             {children}
         </motion.div>
     )
