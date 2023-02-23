@@ -1,3 +1,8 @@
+/**
+ * A function that returns a <footer></footer> element containing the web page's creator and source code
+ * 
+ * @returns {JSX.Element} A <footer></footer> element containing the web page's creator and source code
+ */
 function Footer() {
     return (
         <footer>

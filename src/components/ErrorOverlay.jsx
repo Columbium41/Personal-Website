@@ -1,3 +1,8 @@
+/**
+ * A function that returns a <div></div> element that displays an error message to the user
+ * 
+ * @returns {JSX.Element} returns a <div></div> element containing an error message
+ */
 function ErrorOverlay() {
     return (
         <div className="error-overlay">

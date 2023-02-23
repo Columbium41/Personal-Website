@@ -1,7 +1,15 @@
 import { useEffect } from "react";
 import AnimatedPage from "./AnimatedPage";
 
+/**
+ * A function that returns an <AnimatedPage></AnimatedPage> component containing a 404 message
+ * 
+ * @param {Function} setDocumentTitle A function that sets the web page's document title
+ *  
+ * @returns {JSX.Element} Returns an <AnimatedPage></AnimatedPage> component containing a 404 message
+ */
 function NotFound({ setDocumentTitle }) {
+    // Change the web page's document title on render
     useEffect(() => {
         setDocumentTitle("Not Found");
     }, [])

@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 
+/**
+ * A function that returns a <div></div> element containing a loading overlay
+ * 
+ * @returns {JSX.Element} A <div></div> element containing a loading overlay
+ */
 function LoadingOverlay() {
+    // Create two states containing the loading text and count
     const [loadingText, setLoadingText] = useState('Loading.');
     const [count, setCount] = useState(0);
 
+    // Add a '.' to loadingText every 0.5 seconds and reset it after 4 dots
     useEffect(() => {
         setTimeout(() => {
             if (count === 3) {

@@ -10,6 +10,11 @@ import { useEffect } from 'react';
 import AnimatedRoutes from './components/AnimatedRoutes';
 import useDocumentTitle from './hooks/useDocumentTitle';
 
+/**
+ * A function that changes the web page's color scheme by applying different colors to the :root element
+ * 
+ * @param {Boolean} isDarkTheme True if dark theme, false if light theme
+ */
 function changeTheme(isDarkTheme) {
   const documentElement = document.documentElement;
   const theme = ((isDarkTheme) ? "dark" : "light");
@@ -23,11 +28,22 @@ function changeTheme(isDarkTheme) {
   documentElement.style.transition = 'color 0.5s, background-color 0.5s';
 }
 
+/**
+ * A function that returns a <div></div> containing the entire web page
+ * 
+ * @returns {JSX.Element} A <div></div> containing the web page 
+ */
 function App() {
+  // Fetch app data from json file
   const {data: data, isFetching, fetchError} = useFetch('/Personal-Website/data/data.json');
+
+  // Get the web browser's default theme
   const {isDarkTheme, setIsDarkTheme} = useThemeDetector();
+
+  // Set the document's title to 'Homepage'
   const {setDocumentTitle} = useDocumentTitle("Homepage");
 
+  // Create an effect hook which runs the changeTheme function everytime the web page theme changes
   useEffect(() => {
     changeTheme(isDarkTheme);
   }, [isDarkTheme]);
@@ -35,15 +51,24 @@ function App() {
   return (
     <div className="App">
       <Router>
+        {/* Display a loading overlay while data is loading */}
         {isFetching && !fetchError && <LoadingOverlay />}
+
+        {/* Display an error overlay if data fetching was unsuccessful */}
         {fetchError && <ErrorOverlay />}
         
+        {/* Display the web page if the data was successfully loaded */}
         {!isFetching && !fetchError &&
         <div className="app-content">
+          {/* Header & Navbar */}
           <Navbar isDarkTheme={isDarkTheme} setIsDarkTheme={setIsDarkTheme} />
+
+          {/* Main content */}
           <main>
             <AnimatedRoutes data={data} setDocumentTitle={setDocumentTitle} />
           </main>
+
+          {/* Footer */}
           <Footer />
         </div>}
       </Router>    
@@ -51,4 +76,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
