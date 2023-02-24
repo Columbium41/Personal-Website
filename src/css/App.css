@@ -96,9 +96,8 @@ header + main {
 .theme-toggle {
     width: 45px;
     height: 45px;
-    padding: var(--icon-padding);
     border-radius: 10px;
-    transition: background 0.5s ease-in;
+    transition: background 0.5s ease-in, filter 0.25s;
 }
 .theme-toggle img {
     width: 70%;
@@ -111,8 +110,14 @@ header + main {
 .sun {
     background: orange;
 }
+.sun:hover {
+    filter: saturate(60%);
+}
 .moon {
     background: blue;
+}
+.moon:hover {
+    filter: saturate(80%);
 }
 .theme-toggle:hover {
     cursor: pointer;
