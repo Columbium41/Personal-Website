@@ -51,6 +51,16 @@ header + main {
     width: 900px;
     margin: 0 auto;
 }
+.navbar-logo {
+    font-family: 'Tilt Neon';
+    cursor: pointer;
+}
+.navbar-logo h2 {
+    display: inline-block;
+    transition: transform 0.3s ease-in;
+    color: var(--fg-varient);
+    user-select: none;
+}
 .text-link {
     text-decoration: none;
     color: inherit;

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 /**
  * A function that returns a <header></header> element containing a navbar for the website
@@ -14,11 +15,29 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
         setIsDarkTheme(!isDarkTheme);
     }
 
+    const [isHoveringLogo, setIsHoveringLogo] = useState(false);
+
+    useEffect(() => {
+        if (isHoveringLogo) {
+            document.getElementById('logo-up').style.transform = 'translate(-0.25ch, -0.5ch)';
+            document.getElementById('logo-down').style.transform = 'translate(0.25ch, 0.5ch)';
+        }
+        else {
+            document.getElementById('logo-up').style.transform = 'translate(0)';
+            document.getElementById('logo-down').style.transform = 'translate(0)';
+        }
+    }, [isHoveringLogo])
+
     return (
         <header>
             <nav className="navbar">
                 {/* Navbar Logo */}
-                <img src="/Personal-Website/images/react.svg" alt="logo" />
+                <Link to={'/Personal-Website/'}>
+                    <div className="navbar-logo" onMouseEnter={() => setIsHoveringLogo(true)} onMouseLeave={() => setIsHoveringLogo(false)}>
+                        <h2 id="logo-up">{'<'}Charley&nbsp;</h2>
+                        <h2 id="logo-down">{'Liu/>'}</h2>
+                    </div>
+                </Link>
 
                 {/* Navbar Links */}
                 <ul className="navbar-links">
