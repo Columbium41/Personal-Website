@@ -183,7 +183,7 @@ header + main {
 
 
 .icon {
-    width: 100px;
+    width: 80%;
 }
 .card-container-flex {
     display: flex;
@@ -191,7 +191,7 @@ header + main {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: flex-start;
-    gap: 1ch;
+    gap: 1ch 0.75ch;
 }
 .skill-card {
     display: flex;
@@ -200,7 +200,7 @@ header + main {
     align-items: center;
     text-align: center;
     padding: 1.5ch 0;
-    width: calc(25% - calc(1ch * 3 / 4));
+    width: calc(20% - calc(0.75ch * 4 / 5));
     gap: 1ch;
     background: var(--bg-secondary);
     border-radius: 10px;

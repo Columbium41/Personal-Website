@@ -66,7 +66,7 @@ function Home({ data, setDocumentTitle }) {
 
             {/* Programming Skills Section */}
             <div className="skills w-100">
-                <h2 className="section-header">Programming</h2>
+                <h2 className="section-header">Programming Skills</h2>
                 <div className="card-container-flex">
                     {/* Dynamically render each skill as a <SkillCard></SkillCard> component */}
                     {programmingSkills.map((skill, index) => (
@@ -74,7 +74,8 @@ function Home({ data, setDocumentTitle }) {
                     ))}
                 </div>
             </div>
-
+            
+            {/* Dev Tools Section */}
             <div className="skills w-100">
                 <h2 className="section-header">Dev Tools</h2>
                 <div className="card-container-flex">
