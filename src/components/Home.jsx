@@ -2,6 +2,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { useEffect } from 'react';
 import SkillCard from './SkillCard';
 import AnimatedPage from "./AnimatedPage";
+import { Link } from 'react-router-dom';
 
 /**
  * A function that returns an <AnimatedPage></AnimatedPage> component containing the home page of the website
@@ -16,7 +17,8 @@ function Home({ data, setDocumentTitle }) {
     const typewriterOptions = data.content.typewriter_options;
 
     // Get each skill listed in the portfolio section 
-    const skills = data.content.portfolio.skills;
+    const programmingSkills = data.content.portfolio.programming_skills;
+    const devTools = data.content.portfolio.dev_tools;
 
     // Change the document's title on render
     useEffect(() => {
@@ -57,17 +59,27 @@ function Home({ data, setDocumentTitle }) {
                     I'm a first-year undergrad student at the University of Ottawa with a passion for desigining software.
                     Currently, I'm pursuing a 5 year Computer Science co-op degree while also learning web development.
                     My hobbies include Music, Chess, Weight Lifting, and Rhythm Games.
-                    When I'm not doing academic work or enjoying leisure time, I like to work on fun and interesting projects to help expand my knowledge.
+                    When I'm not doing academic work or enjoying leisure time, 
+                    I like to work on fun and interesting <Link to="/Personal-Website/projects" className="text-link">projects</Link> to help expand my knowledge and skills.
                 </p>
             </div>
 
-            {/* Skills Section */}
+            {/* Programming Skills Section */}
             <div className="skills w-100">
-                <h2 className="section-header">Skills</h2>
+                <h2 className="section-header">Programming</h2>
                 <div className="card-container-flex">
                     {/* Dynamically render each skill as a <SkillCard></SkillCard> component */}
-                    {skills.map((skill, index) => (
+                    {programmingSkills.map((skill, index) => (
                         <SkillCard skill={skill} key={index} />
+                    ))}
+                </div>
+            </div>
+
+            <div className="skills w-100">
+                <h2 className="section-header">Dev Tools</h2>
+                <div className="card-container-flex">
+                    {devTools.map((skill, index) => (
+                        <SkillCard skill={skill} key={index}/>
                     ))}
                 </div>
             </div>

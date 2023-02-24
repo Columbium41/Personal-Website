@@ -1,7 +1,7 @@
 {
     "content": {
         "portfolio": {
-            "skills": [
+            "programming_skills": [
                 "HTML",
                 "CSS", 
                 "JavaScript",
@@ -9,6 +9,11 @@
                 "Node.js",
                 "Java",
                 "Python"
+            ],
+            "dev_tools": [
+                "VSCode",
+                "Github",
+                "Git"
             ],
             "projects": {
                 "Expense_Tracker": {

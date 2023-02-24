@@ -26,6 +26,17 @@
     overflow-wrap: break-word;
     hyphens: auto;
 }
+.text-link {
+    color: var(--fg-secondary);
+    transition: filter 0.4s;
+}
+.text-link:hover {
+    filter: opacity(70%);
+}
+.text-link:active {
+    transition: filter 0.2s;
+    filter: opacity(40%);
+}
 
 
 
@@ -61,12 +72,12 @@ header + main {
     color: var(--fg-varient);
     user-select: none;
 }
-.text-link {
+.navbar-text-link {
     text-decoration: none;
     color: inherit;
     transition: color 0.4s;
 }
-.text-link:hover {
+.navbar-text-link:hover {
     color: var(--fg-varient);
 }
 .navbar-icon {
@@ -179,15 +190,17 @@ header + main {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: center;
-    gap: var(--card-container-gap);
+    justify-content: flex-start;
+    gap: 1ch;
 }
 .skill-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1.5ch;
+    padding: 1.5ch 0;
+    width: calc(25% - calc(1ch * 3 / 4));
     gap: 1ch;
     background: var(--bg-secondary);
     border-radius: 10px;

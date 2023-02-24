@@ -52,9 +52,9 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                     </li>
 
                     {/* Web page links & Resume download link */}
-                    <li><Link to="/Personal-Website/" className="text-link">Home</Link></li>
-                    <li><Link to="/Personal-Website/projects/" className="text-link">Projects</Link></li>
-                    <li><a href="data/CharleyLiu_Resume.pdf" className="text-link resume" download>Resume</a></li>
+                    <li><Link to="/Personal-Website/" className="navbar-text-link">Home</Link></li>
+                    <li><Link to="/Personal-Website/projects/" className="navbar-text-link">Projects</Link></li>
+                    <li><a href="data/CharleyLiu_Resume.pdf" className="navbar-text-link resume" download>Resume</a></li>
 
                     {/* Button to toggle the web page's theme */}
                     <div className={"theme-toggle " + ((isDarkTheme) ? "moon" : "sun")} onClick={toggleTheme}>
