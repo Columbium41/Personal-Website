@@ -41,7 +41,7 @@ function ProjectPage({ data, setDocumentTitle }) {
             <div className="project-page">
                 {/* Link back to projects section */}
                 <Link to={"/Personal-Website/projects"}>
-                    <h3 className="back-to-projects">
+                    <h3 className="back-to-link">
                         {'<'} Projects
                     </h3>
                 </Link>

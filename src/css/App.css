@@ -37,6 +37,7 @@ header {
     background: var(--bg-header);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    transition: background 0.5s ease-in;
 }
 header + main {
     margin-top: 4ch;
@@ -235,13 +236,13 @@ header + main {
     color: inherit;
     font-size: inherit;
 }
-.back-to-projects {
+.back-to-link {
     color: var(--fg-varient);
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
-.back-to-projects::before {
+.back-to-link::before {
     content: "";
     position: absolute;
     left: 0;
@@ -251,7 +252,7 @@ header + main {
     background-color: var(--fg-primary);
     transition: width 0.25s ease-out;
 }
-.back-to-projects:hover::before {
+.back-to-link:hover::before {
     width: 100%;
 }
 .project-metadata-container {
