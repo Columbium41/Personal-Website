@@ -43,6 +43,7 @@
     align-items: stretch;
     justify-content: flex-start;
     gap: 1ch 0.75ch;
+    border: 1px solid red;
 }
 .skill-card {
     display: flex;
@@ -62,4 +63,31 @@
 }
 .skill-card:hover {
     transform: translateY(-0.5ch);
+}
+
+/* Adjust number of cards per row in card containers */
+@media only screen and (max-width: 550px) {
+    .skill-card {
+        width: calc(25% - calc(0.75ch * 3 / 4));
+    }
+}
+@media only screen and (max-width: 445px) {
+    .skill-card {
+        width: calc(calc(100% / 3) - calc(0.75ch * 2 / 3));
+    }
+}
+@media only screen and (max-width: 340px) {
+    .skill-card {
+        width: calc(50% - calc(0.75ch * 1 / 2));
+    }
+}
+
+/* Adjust profile thumbnail */
+@media only screen and (max-width: 420px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1ch;
+    }
 }

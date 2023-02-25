@@ -41,8 +41,8 @@
 }
 
 /* Resize main element */
-@media only screen and (max-width: calc(600px + 2ch)) {
+@media only screen and (max-width: calc(600px + 4ch)) {
     main {
-        width: calc(100% - 1ch) !important; 
+        width: calc(100% - 2ch) !important; 
     }
 }
