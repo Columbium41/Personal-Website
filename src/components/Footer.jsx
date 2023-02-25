@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer>
             <p>Created by Charley Liu using <i className="fa-brands fa-react"></i> - 
-                View <a href="https://github.com/Columbium41/Personal-Website" target="_blank"><i class="fa-brands fa-github"></i>Source Code</a>
+                View <a href="https://github.com/Columbium41/Personal-Website" target="_blank"><i className="fa-brands fa-github"></i>Source Code</a>
             </p>
         </footer>
     )

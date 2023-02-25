@@ -56,17 +56,19 @@ function Home({ data, setDocumentTitle }) {
                 <h2 className="section-header">About Me</h2>
                 <p>
                     Hello, my name is Charley. 
-                    I'm a first-year undergrad student at the University of Ottawa with a passion for desigining software.
-                    Currently, I'm pursuing a 5 year Computer Science co-op degree while also learning web development.
+                    I'm a first-year Computer Science undergrad student at the University of Ottawa with a passion for desigining software.
+                    Currently, I'm pursuing a 5 year Computer Science co-op degree while also learning web development on the side.
                     My hobbies include Music, Chess, Weight Lifting, and Rhythm Games.
                     When I'm not doing academic work or enjoying leisure time, 
-                    I like to work on fun and interesting <Link to="/Personal-Website/projects" className="text-link">projects</Link> to help expand my knowledge and skills.
+                    I like to work on fun and interesting <Link to="/Personal-Website/projects" className="text-link">projects</Link> to help expand my knowledge and skills!
                 </p>
             </div>
 
+            {/*  */}
+
             {/* Programming Skills Section */}
             <div className="skills w-100">
-                <h2 className="section-header">Programming Skills</h2>
+                <h2 className="section-header">Technical Skills</h2>
                 <div className="card-container-flex">
                     {/* Dynamically render each skill as a <SkillCard></SkillCard> component */}
                     {programmingSkills.map((skill, index) => (

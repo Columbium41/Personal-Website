@@ -10,9 +10,10 @@
     text-decoration-thickness: 0.25ch;
     text-underline-offset: var(--underline-offset);
     margin-bottom: calc(var(--underline-offset) + 0.2ch);
+    text-indent: 0.5rem;
 }
 .text-section p {
-    text-indent: 1.5rem;
+    text-indent: 2rem;
     overflow-wrap: break-word;
     hyphens: auto;
 }
@@ -27,6 +28,7 @@
     hyphens: auto;
 }
 .text-link {
+    text-decoration: none;
     color: var(--fg-secondary);
     transition: filter 0.4s;
 }
@@ -102,7 +104,7 @@ header + main {
     justify-content: space-between;
     list-style: none;
     gap: 5ch;
-    padding: 1ch 0;
+    padding: 0.5ch 0;
 }
 .icon-links {
     display: flex;
@@ -144,6 +146,39 @@ header + main {
     cursor: pointer;
 }
 
+.dropdown-container {
+    position: relative;
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid var(--fg-primary);
+}
+.dropdown-container img {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dropdown-links {
+    font-size: 1.2rem;
+    position: absolute;
+    top: calc(100% + 0.5ch);
+    left: 0;
+    width: 500%;
+    transform: translateX(calc(-100% + 45px));
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    background: var(--bg-primary);
+    padding: 1ch 0.5ch;
+    border: 1px solid var(--fg-primary);
+    border-radius: 10px;
+    gap: 1ch;
+}
+
 
 
 /* Home Section Styling */
@@ -173,7 +208,7 @@ header + main {
     font-size: 1.2rem;
 }
 .profile h1 {
-    margin-bottom: 0.25ch;
+    margin-bottom: 0.5ch;
 }
 .headshot {
     width: 120px;
@@ -371,4 +406,39 @@ footer {
 }
 footer a {
     color: var(--fg-secondary);
+}
+
+/* Media Queries */
+
+/* Resize main element */
+@media only screen and (max-width: calc(600px + 2ch)) {
+    main {
+        width: calc(100% - 1ch) !important; 
+    }
+}
+
+/* Resize navbar and shrink navbar gap */
+@media only screen and (max-width: 900px) {
+    .navbar {
+        width: 100% !important;   
+    }
+    .navbar-links {
+        gap: 2ch !important;
+    }
+    .icon-links {
+        gap: 0 !important;
+    }
+}
+  
+/* Modify navbar to contain a drop-down menu */
+@media only screen and (max-width: 700px) {
+    .navbar-links {
+        gap: 1ch !important;
+    }
+    .navbar-links li {
+        display: none;
+    }
+    .dropdown-container {
+        display: block;
+    }
 }
