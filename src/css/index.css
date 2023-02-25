@@ -8,6 +8,7 @@
   --dark-theme-bg-header: rgba(32, 32, 32, 0.8);
   --dark-theme-fg-primary: rgba(255, 255, 255, 0.87);
   --dark-theme-fg-secondary: #ddc2ff;
+  --dark-theme-fg-tertiary: #ff69c0;
   --dark-theme-fg-varient: #03dac6;
   --dark-theme-error: #cf6679;
 
@@ -16,7 +17,8 @@
   --light-theme-bg-header: rgba(255, 255, 255, 0.25);
   --light-theme-fg-primary: #000000;
   --light-theme-fg-secondary: #5805cc;
-  --light-theme-fg-varient: #0744b5;
+  --light-theme-fg-tertiary: #0744b5;
+  --light-theme-fg-varient: #00786c;
   --light-theme-error: #b00020;
 
   font-family: 'Montserrat', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -34,6 +36,7 @@
   --bg-header: var(--dark-theme-bg-header);
   --fg-primary: var(--dark-theme-fg-primary);
   --fg-secondary: var(--dark-theme-fg-secondary);
+  --fg-tertiary: var(--dark-theme-fg-tertiary);
   --fg-varient: var(--dark-theme-fg-varient);
   --error: var(--dark-theme-error);
 
@@ -70,7 +73,7 @@
 }
 main {
   flex: 1;
-  margin: 0 auto;
+  margin: 4ch auto !important;
   width: 600px;
 }
 

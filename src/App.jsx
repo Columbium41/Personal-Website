@@ -24,6 +24,7 @@ function changeTheme(isDarkTheme) {
   documentElement.style.setProperty(`--bg-header`, `var(--${theme}-theme-bg-header)`);
   documentElement.style.setProperty(`--fg-primary`, `var(--${theme}-theme-fg-primary)`);
   documentElement.style.setProperty(`--fg-secondary`, `var(--${theme}-theme-fg-secondary)`);
+  documentElement.style.setProperty(`--fg-tertiary`, `var(--${theme}-theme-fg-tertiary)`);
   documentElement.style.setProperty(`--fg-varient`, `var(--${theme}-theme-fg-varient)`);
   documentElement.style.setProperty(`--error`, `var(--${theme}-theme-error)`);
   documentElement.style.transition = 'color 0.5s, background-color 0.5s';

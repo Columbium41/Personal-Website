@@ -74,7 +74,7 @@ function ProjectPage({ data, setDocumentTitle }) {
                         <div className="project-metadata" key={index}>
                             <h4>{ array[0].replace("_", " ") + ":" }</h4>
                             <p className="break-word">
-                                <a href={ array[1] } target="_blank" >{ array[1] }</a>
+                                <a href={ array[1] } target="_blank" className="text-link" >{ array[1] }</a>
                             </p>
                         </div>
                     ))}

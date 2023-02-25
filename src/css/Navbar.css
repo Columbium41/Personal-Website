@@ -7,9 +7,6 @@ header {
     -webkit-backdrop-filter: blur(10px);
     transition: background 0.5s ease-in;
 }
-header + main {
-    margin-top: 4ch;
-}
 
 .navbar {
     display: flex;

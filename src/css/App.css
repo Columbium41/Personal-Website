@@ -28,8 +28,8 @@
     hyphens: auto;
 }
 .text-link {
-    text-decoration: none;
-    color: var(--fg-secondary);
+    text-underline-offset: 0.25ch;
+    color: var(--fg-tertiary);
     transition: filter 0.4s;
 }
 .text-link:hover {
