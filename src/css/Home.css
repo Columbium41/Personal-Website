@@ -1,0 +1,65 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4ch;
+}
+.typewriter-container {
+    padding: 0.5ch 0;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+}
+.typewriter-container span {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.typewriter {
+    color: var(--fg-secondary);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.profile h1 {
+    margin-bottom: 0.5ch;
+}
+.headshot {
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--fg-primary);
+}
+
+
+.icon {
+    width: 80%;
+}
+.card-container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1ch 0.75ch;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5ch 0;
+    width: calc(20% - calc(0.75ch * 4 / 5));
+    gap: 1ch;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    cursor: default;
+
+    transition: transform 0.25s;
+    transition-timing-function: ease-out;
+}
+.skill-card:hover {
+    transform: translateY(-0.5ch);
+}

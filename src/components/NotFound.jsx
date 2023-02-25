@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AnimatedPage from "./AnimatedPage";
 import { Link } from "react-router-dom";
+import '../css/NotFound.css';
 
 /**
  * A function that returns an <AnimatedPage></AnimatedPage> component containing a 404 message

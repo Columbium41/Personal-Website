@@ -1,4 +1,5 @@
 import AnimatedPage from "./AnimatedPage";
+import '../css/ErrorOverlay.css';
 
 /**
  * A function that returns an <AnimatedPage></AnimatedPage> element that displays an error message to the user

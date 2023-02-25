@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import { useEffect } from "react";
 import AnimatedPage from "./AnimatedPage";
+import '../css/Projects.css';
 
 /**
  * A function that returns an <AnimatedPage></AnimatedPage> component containing a page displaying a list of <ProjectCard></ProjectCard> components

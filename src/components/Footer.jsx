@@ -1,3 +1,5 @@
+import '../css/Footer.css';
+
 /**
  * A function that returns a <footer></footer> element containing the web page's creator and source code
  * 

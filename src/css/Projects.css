@@ -1,0 +1,99 @@
+.card-container-grid {
+    margin-top: 3ch;
+    display: grid;
+    gap: 3ch 1ch;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+.project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    border-radius: 1ch;
+    border: 1px groove var(--fg-primary);
+}
+.project-card:hover {
+    cursor: pointer;
+}
+.project-thumbnail-card {
+    justify-self: start;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 1ch 1ch 0 0;
+}
+.project-thumbnail {
+    border-radius: 1ch;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px groove var(--fg-primary);
+}
+.project-card-text {
+    padding: 1ch 0 1ch 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+.back-to-link {
+    color: var(--fg-varient);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.back-to-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--fg-primary);
+    transition: width 0.25s ease-out;
+}
+.back-to-link:hover::before {
+    width: 100%;
+}
+.project-metadata-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5ch;
+}
+.project-metadata {
+    margin-left: 1rem;
+}
+.project-metadata h4,
+.project-metadata p {
+    display: inline;
+}
+.project-metadata h4 {
+    background-color: var(--bg-secondary);
+    padding: 0.25ch 0.5ch;
+    color: var(--fg-secondary);
+}
+.project-metadata h4 + p::before {
+    content: " ";
+}
+.project-metadata a {
+    vertical-align: middle;
+}
+.topic-item:not(:last-of-type)::after {
+    content: ", ";
+}
+.project-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2ch;
+    align-items: flex-start;
+}

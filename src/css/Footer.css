@@ -1,0 +1,7 @@
+footer {
+    text-align: center;
+    margin: 5ch 0 2.5ch 0;
+}
+footer a {
+    color: var(--fg-secondary);
+}

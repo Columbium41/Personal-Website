@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import '../css/LoadingOverlay.css';
 
 /**
  * A function that returns a <div></div> element containing a loading overlay

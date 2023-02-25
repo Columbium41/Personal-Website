@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import '../css/Navbar.css';
 
 /**
  * A function that returns a <header></header> element containing a navbar for the website
@@ -54,7 +55,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                     {/* Web page links & Resume download link */}
                     <li><Link to="/Personal-Website/" className="navbar-text-link">Home</Link></li>
                     <li><Link to="/Personal-Website/projects/" className="navbar-text-link">Projects</Link></li>
-                    <li><a href="data/CharleyLiu_Resume.pdf" className="navbar-text-link resume" download>Resume</a></li>
+                    <li><a href="/Personal-Website/data/CharleyLiu_Resume.pdf" className="navbar-text-link resume" download>Resume</a></li>
 
                     {/* Button to toggle the web page's theme */}
                     <div 
@@ -79,7 +80,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                         <div className="dropdown-links">
                             <Link to="/Personal-Website/" className="navbar-text-link">Home</Link>
                             <Link to="/Personal-Website/projects/" className="navbar-text-link">Projects</Link>
-                            <a href="data/CharleyLiu_Resume.pdf" className="navbar-text-link" download>Resume</a>
+                            <a href="/Personal-Website/data/CharleyLiu_Resume.pdf" className="navbar-text-link" download>Resume</a>
                         </div>}
                     </div>
                 </ul>

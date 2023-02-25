@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import SkillCard from './SkillCard';
 import AnimatedPage from "./AnimatedPage";
 import { Link } from 'react-router-dom';
+import '../css/Home.css';
 
 /**
  * A function that returns an <AnimatedPage></AnimatedPage> component containing the home page of the website
