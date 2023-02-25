@@ -28,26 +28,23 @@ function Home({ data, setDocumentTitle }) {
 
     return (
         <AnimatedPage className={"about"}>
-            {/* Typewriter */}
-            <div className="typewriter-container w-100 text-center">
-                <span>{'>'} Hello, I am a </span>
-                <span className="typewriter">
-                    <Typewriter 
-                        words={typewriterOptions} 
-                        cursor={true}
-                        cursorBlinking={false}
-                        loop={true}
-                        typeSpeed={60}
-                        deleteSpeed={40}
-                    />
-                </span>
-            </div>
-
-            {/* Profile */}
+            {/* Profile + Typewriter */}
             <div className="profile w-100">
                 <div>
                     <h1>Charley Liu</h1>
-                    <p className="occupation">Computer Science Student</p>
+
+                    <span className="typewriter">
+                        {'> '}
+                        <Typewriter 
+                          className="typewriter" 
+                          words={typewriterOptions} 
+                          cursor={true}
+                          cursorBlinking={true}
+                          loop={true}
+                          typeSpeed={80}
+                          deleteSpeed={60}
+                        />
+                    </span>
                 </div>
                 <img src="/Personal-Website/images/headshot.jpeg" alt="headshot" className="headshot" />
             </div>
