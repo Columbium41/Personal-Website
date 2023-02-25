@@ -97,3 +97,14 @@
     gap: 2ch;
     align-items: flex-start;
 }
+
+/* one card per row on small screens */
+@media only screen and (max-width: 500px) {
+    .card-container-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -43,7 +43,6 @@
     align-items: stretch;
     justify-content: flex-start;
     gap: 1ch 0.75ch;
-    border: 1px solid red;
 }
 .skill-card {
     display: flex;
