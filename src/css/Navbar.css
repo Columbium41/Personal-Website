@@ -110,9 +110,24 @@ header + main {
     height: 45px;
     border-radius: 10px;
     border: 1px solid var(--fg-primary);
+    transition: background 0.4s;
 }
 .dropdown-container:hover {
     cursor: pointer;
+}
+.dropdown-dark:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+.dropdown-dark:active {
+    transition: background 0.2s !important;
+    background: rgba(255, 255, 255, 0.6);
+}
+.dropdown-light:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+.dropdown-light:active {
+    transition: background 0.2s !important;
+    background: rgba(0, 0, 0, 0.6);
 }
 .dropdown-container img {
     width: 50%;

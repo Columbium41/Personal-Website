@@ -69,11 +69,13 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                     </div>
 
                     {/* Links drop-down menu (only for device width <= 700px) */}
-                    <div className="dropdown-container">
+                    <div 
+                      className={"dropdown-container dropdown-" + (isDarkTheme ? "dark" : "light")}
+                      onClick={() => setDropdownActive(!dropdownActive)}
+                    >
                         <img 
                           src={"/Personal-Website/images/dropdown-menu-" + (isDarkTheme ? "dark" : "light") + ".svg"} 
                           alt="dropdown" 
-                          onClick={() => setDropdownActive(!dropdownActive)}
                         />
 
                         {dropdownActive &&
