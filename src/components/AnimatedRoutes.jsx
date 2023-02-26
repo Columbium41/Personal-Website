@@ -21,10 +21,22 @@ function AnimatedRoutes({ data, setDocumentTitle }) {
         <AnimatePresence mode="wait">
             {/* Pass in the location of the browser into Routes as a prop */}
             <Routes location={location} key={location.pathname}>
-                <Route exact path="/Personal-Website/" element={<Home data={data} setDocumentTitle={setDocumentTitle} />} />
-                <Route exact path="/Personal-Website/projects" element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} />
-                <Route exact path="/Personal-Website/projects/:id" element={<ProjectPage data={data} setDocumentTitle={setDocumentTitle} />} />
-                <Route path="*" element={<NotFound setDocumentTitle={setDocumentTitle} />} />
+                <Route 
+                    exact path="/Personal-Website/" 
+                    element={<Home data={data} setDocumentTitle={setDocumentTitle} />} 
+                />
+                <Route 
+                    exact path="/Personal-Website/projects" 
+                    element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} 
+                />
+                <Route 
+                    exact path="/Personal-Website/projects/:id" 
+                    element={<ProjectPage data={data} setDocumentTitle={setDocumentTitle} />} 
+                />
+                <Route 
+                    path="*" 
+                    element={<NotFound setDocumentTitle={setDocumentTitle} />} 
+                />
             </Routes>
         </AnimatePresence>
     )

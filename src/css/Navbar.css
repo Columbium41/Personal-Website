@@ -94,7 +94,7 @@ header {
     background: #8b4dd6;
 }
 .moon:hover {
-    filter: saturate(80%);
+    filter: saturate(40%);
 }
 .theme-toggle:hover {
     cursor: pointer;

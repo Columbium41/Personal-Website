@@ -22,8 +22,8 @@ function AnimatedPage({ children, className }) {
           variants={animation} 
           initial="initial" 
           animate="animate" 
-          exit="exit" t
-          transition={{ duration: 0.4, ease: "easeIn" }} 
+          exit="exit"
+          transition={{ duration: 0.4, ease: "easeIn" }}
         >
             {children}
         </motion.div>

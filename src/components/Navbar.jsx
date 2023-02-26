@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import '../css/Navbar.css';
+import { motion } from "framer-motion";
+
+const loadAnimation = {
+    initial: {y: "-100%"},
+    animate: {y: 0},
+}
 
 /**
  * A function that returns a <header></header> element containing a navbar for the website
@@ -30,7 +36,12 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
     const [dropdownActive, setDropdownActive] = useState(false);
 
     return (
-        <header>
+        <motion.header 
+          variants={loadAnimation}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.8, ease: "easeIn" }}
+        >
             <nav className="navbar">
                 {/* Navbar Logo */}
                 <Link to={'/Personal-Website/'}>
@@ -87,7 +98,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                     </div>
                 </ul>
             </nav>
-        </header>
+        </motion.header>
     )
 }
 
