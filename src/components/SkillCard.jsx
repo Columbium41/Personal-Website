@@ -10,7 +10,7 @@ function SkillCard({ skill }) {
         <div className="skill-card">
             {/* Skill Icon */}
             <img 
-            src={"/Personal-Website/images/" + skill.toLowerCase().replace(".", "") + ".svg"} 
+            src={"/Personal-Website/images/" + skill.toLowerCase().replace(".", "").replace(" ", "_") + ".svg"} 
             alt={skill + " logo"}
             className="icon" />
 

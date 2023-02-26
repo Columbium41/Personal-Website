@@ -13,7 +13,8 @@
             "dev_tools": [
                 "VSCode",
                 "Github",
-                "Git"
+                "Git",
+                "Zsh"
             ],
             "projects": {
                 "Expense_Tracker": {
@@ -104,6 +105,22 @@
                     "links": {
                         "Github": "https://github.com/Columbium41/Minesweeper",
                         "Download_JAR": "https://github.com/Columbium41/Minesweeper/releases/tag/v1.1"
+                    }
+                },
+                "Penguins_Infopage": {
+                    "topics": [
+                        "HTML",
+                        "CSS"
+                    ],
+                    "description": "A one-page informational website about penguins",
+                    "long_description": "A simple one-page informational website about penguins.",
+                    "date_created": "October 2022",
+                    "thumbnails": [
+                        "https://user-images.githubusercontent.com/75919484/221424496-3fa92334-0e3a-4b00-a00b-b706f76f7a61.png"
+                    ],
+                    "links": {
+                        "Github": "https://github.com/Columbium41/Penguins-Info-Page/",
+                        "Website": "https://columbium41.github.io/Penguins-Info-Page/"
                     }
                 }
             }
