@@ -19,11 +19,11 @@
     cursor: pointer;
 }
 .project-thumbnail-card {
-    justify-self: start;
-    max-width: 100%;
-    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 1ch 1ch 0 0;
+    aspect-ratio: 16/9;
 }
 .project-thumbnail {
     border-radius: 1ch;

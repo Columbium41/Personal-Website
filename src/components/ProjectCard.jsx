@@ -16,9 +16,11 @@ function ProjectCard({ project }) {
         <Link to={"/Personal-Website/projects/" + projectTitle} className="card-link">
             <div className="project-card">
                 {/* Project Thumbnail */}
-                <img src={"/Personal-Website/images/" + projectTitle.toLowerCase() + ".png"} 
-                    alt={projectTitle + " thumbnail"} 
-                    className="project-thumbnail-card" />
+                <div>
+                    <img src={"/Personal-Website/images/" + projectTitle.toLowerCase() + ".png"} 
+                        alt={projectTitle + " thumbnail"} 
+                        className="project-thumbnail-card" />
+                </div>
                 
                 {/* Project title and short description */}
                 <div className="project-card-text">
