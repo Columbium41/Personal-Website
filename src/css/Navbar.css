@@ -91,7 +91,7 @@ header {
     filter: saturate(60%);
 }
 .moon {
-    background: blue;
+    background: #8b4dd6;
 }
 .moon:hover {
     filter: saturate(80%);
