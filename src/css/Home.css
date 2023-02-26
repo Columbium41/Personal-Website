@@ -55,6 +55,20 @@
     transform: translateY(-0.5ch);
 }
 
+.contacts-list {
+    list-style: disc inside;
+    margin-top: 1ch;
+    text-indent: 0.5rem;
+}
+.contacts-list i {
+    margin-right: 3px;
+}
+.contacts-list li:not(:last-of-type) {
+    margin-bottom: 0.5ch;
+}
+
+
+
 /* Adjust number of cards per row in card containers */
 @media only screen and (max-width: 550px) {
     .skill-card {

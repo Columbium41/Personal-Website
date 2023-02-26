@@ -40,6 +40,26 @@
     filter: opacity(40%);
 }
 
+.back-to-link {
+    color: var(--fg-varient);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.back-to-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--fg-tertiary);
+    transition: width 0.25s ease-out;
+}
+.back-to-link:hover::before {
+    width: 100%;
+}
+
 /* Resize main element */
 @media only screen and (max-width: calc(600px + 4ch)) {
     main {

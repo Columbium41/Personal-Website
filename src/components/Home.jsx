@@ -62,8 +62,6 @@ function Home({ data, setDocumentTitle }) {
                 </p>
             </div>
 
-            {/*  */}
-
             {/* Programming Skills Section */}
             <div className="skills w-100">
                 <h2 className="section-header">Technical Skills</h2>
@@ -83,6 +81,46 @@ function Home({ data, setDocumentTitle }) {
                         <SkillCard skill={skill} key={index}/>
                     ))}
                 </div>
+            </div>
+
+            {/* Contacts + Socials */}
+            <div className="text-section w-100">
+                <h2 className="section-header">Contacts & Socials</h2>
+                <p>
+                    Feel free to contact me on any of the following platforms for any personal, business, or collaboration related inquiries.
+                </p>
+                <ul className="contacts-list">
+                    <li>
+                        <i className="fa-solid fa-envelope"></i> 
+                        <a 
+                          href="mailto:charleyliu716@gmail.com" 
+                          target="_blank"
+                          className="text-link"
+                        >
+                            Gmail {'(Personal & Business)'}
+                        </a>
+                    </li>
+                    <li>
+                        <i className="fa-brands fa-linkedin"></i> 
+                        <a 
+                          href="https://www.linkedin.com/in/charleyliu-uo/" 
+                          target="_blank"
+                          className="text-link"
+                        >
+                            LinkedIn {'(Networking & Business)'}
+                        </a>
+                    </li>
+                    <li>
+                        <i className="fa-brands fa-github"></i> 
+                        <a 
+                          href="https://github.com/Columbium41" 
+                          target="_blank"
+                          className="text-link"
+                        >
+                            Github {'(Open-Source Collaboration)'}
+                        </a>
+                    </li>
+                </ul>
             </div>
         </AnimatedPage>
     );
