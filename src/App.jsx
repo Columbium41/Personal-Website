@@ -37,7 +37,7 @@ function changeTheme(isDarkTheme) {
  */
 function App() {
   // Fetch app data from json file
-  const {data: data, isFetching, fetchError} = useFetch('/Personal-Website/data/data.json');
+  const {data: data, isFetching, fetchError} = useFetch('/data/data.json');
 
   // Get the web browser's default theme
   const {isDarkTheme, setIsDarkTheme} = useThemeDetector();

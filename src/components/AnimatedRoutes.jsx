@@ -22,15 +22,15 @@ function AnimatedRoutes({ data, setDocumentTitle }) {
             {/* Pass in the location of the browser into Routes as a prop */}
             <Routes location={location} key={location.pathname}>
                 <Route 
-                    exact path="/Personal-Website/" 
+                    exact path="/" 
                     element={<Home data={data} setDocumentTitle={setDocumentTitle} />} 
                 />
                 <Route 
-                    exact path="/Personal-Website/projects" 
+                    exact path="/projects" 
                     element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} 
                 />
                 <Route 
-                    exact path="/Personal-Website/projects/:id" 
+                    exact path="/projects/:id" 
                     element={<ProjectPage data={data} setDocumentTitle={setDocumentTitle} />} 
                 />
                 <Route 

@@ -46,7 +46,7 @@ function Home({ data, setDocumentTitle }) {
                         />
                     </span>
                 </div>
-                <img src="/Personal-Website/images/headshot.jpeg" alt="headshot" className="headshot" />
+                <img src="/images/headshot.jpeg" alt="headshot" className="headshot" />
             </div>
             
             {/* About Me Section */}
@@ -58,7 +58,7 @@ function Home({ data, setDocumentTitle }) {
                     Currently, I'm pursuing a 5 year Computer Science co-op degree while also learning web development on the side.
                     My hobbies include Music, Chess, Weight Lifting, and Rhythm Games.
                     When I'm not doing academic work or enjoying leisure time, 
-                    I like to work on fun and interesting <Link to="/Personal-Website/projects" className="text-link">projects</Link> to help expand my knowledge and skills!
+                    I like to work on fun and interesting <Link to="/projects" className="text-link">projects</Link> to help expand my knowledge and skills!
                 </p>
             </div>
 

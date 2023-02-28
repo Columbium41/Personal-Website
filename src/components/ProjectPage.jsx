@@ -40,7 +40,7 @@ function ProjectPage({ data, setDocumentTitle }) {
             { (projectData !== "") && 
             <div className="project-page">
                 {/* Link back to projects section */}
-                <Link to={"/Personal-Website/projects"}>
+                <Link to={"/projects"}>
                     <h3 className="back-to-link">
                         {'<'} Projects
                     </h3>

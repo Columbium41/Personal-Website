@@ -19,7 +19,7 @@ function NotFound({ setDocumentTitle }) {
     return (
         <AnimatedPage className={"not-found"}>
             {/* Back to homepage link */}
-            <Link to={"/Personal-Website/"}>
+            <Link to={"/"}>
                 <h4 className="back-to-link">{'<'} Back to homepage</h4>
             </Link>
 

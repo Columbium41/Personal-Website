@@ -44,7 +44,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
         >
             <nav className="navbar">
                 {/* Navbar Logo */}
-                <Link to={'/Personal-Website/'}>
+                <Link to={'/'}>
                     <div className="navbar-logo" onMouseEnter={() => setIsHoveringLogo(true)} onMouseLeave={() => setIsHoveringLogo(false)}>
                         <h2 id="logo-up">{'<'}Charley&nbsp;</h2>
                         <h2 id="logo-down">{'Liu/>'}</h2>
@@ -56,17 +56,17 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                     {/* Social Icon Links */}
                     <li className="icon-links">
                         <a href="https://github.com/Columbium41" target="_blank">
-                            <img src="/Personal-Website/images/github.svg" alt="github" className={"navbar-icon " + ((isDarkTheme) ? "light-hover-bg" : "dark-hover-bg")} />
+                            <img src="/images/github.svg" alt="github" className={"navbar-icon " + ((isDarkTheme) ? "light-hover-bg" : "dark-hover-bg")} />
                         </a>
                         <a href="https://www.linkedin.com/in/charleyliu-uo/" target="_blank">
-                            <img src="/Personal-Website/images/linkedin.svg" alt="linkedin" className="navbar-icon dark-hover" />
+                            <img src="/images/linkedin.svg" alt="linkedin" className="navbar-icon dark-hover" />
                         </a>
                     </li>
 
                     {/* Web page links & Resume download link */}
-                    <li><Link to="/Personal-Website/" className="navbar-text-link">Home</Link></li>
-                    <li><Link to="/Personal-Website/projects/" className="navbar-text-link">Projects</Link></li>
-                    <li><a href="/Personal-Website/data/CharleyLiu_Resume.pdf" className="navbar-text-link resume" download>Resume</a></li>
+                    <li><Link to="/" className="navbar-text-link">Home</Link></li>
+                    <li><Link to="/projects/" className="navbar-text-link">Projects</Link></li>
+                    <li><a href="/data/CharleyLiu_Resume.pdf" className="navbar-text-link resume" download>Resume</a></li>
 
                     {/* Button to toggle the web page's theme */}
                     <div 
@@ -74,7 +74,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                       onClick={() => setIsDarkTheme(!isDarkTheme)}
                     >
                         <img 
-                          src={"/Personal-Website/images/" + ((isDarkTheme) ? "sun" : "moon") + ".svg"} 
+                          src={"/images/" + ((isDarkTheme) ? "sun" : "moon") + ".svg"} 
                           alt={((isDarkTheme) ? "moon" : "sun") + " logo"} 
                         />
                     </div>
@@ -85,15 +85,15 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                       onClick={() => setDropdownActive(!dropdownActive)}
                     >
                         <img 
-                          src={"/Personal-Website/images/dropdown-menu-" + (isDarkTheme ? "dark" : "light") + ".svg"} 
+                          src={"/images/dropdown-menu-" + (isDarkTheme ? "dark" : "light") + ".svg"} 
                           alt="dropdown" 
                         />
 
                         {dropdownActive &&
                         <div className="dropdown-links">
-                            <Link to="/Personal-Website/" className="navbar-text-link">Home</Link>
-                            <Link to="/Personal-Website/projects/" className="navbar-text-link">Projects</Link>
-                            <a href="/Personal-Website/data/CharleyLiu_Resume.pdf" className="navbar-text-link" download>Resume</a>
+                            <Link to="/" className="navbar-text-link">Home</Link>
+                            <Link to="/projects/" className="navbar-text-link">Projects</Link>
+                            <a href="/data/CharleyLiu_Resume.pdf" className="navbar-text-link" download>Resume</a>
                         </div>}
                     </div>
                 </ul>
