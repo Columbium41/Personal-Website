@@ -1,7 +1,7 @@
 import './css/App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 import useFetch from '/src/hooks/useFetch';
 import ErrorOverlay from '/src/components/ErrorOverlay';
 import LoadingOverlay from '/src/components/LoadingOverlay';
