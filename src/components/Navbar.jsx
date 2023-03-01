@@ -93,7 +93,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                         <div className="dropdown-links">
                             <Link to="/" className="navbar-text-link">Home</Link>
                             <Link to="/projects/" className="navbar-text-link">Projects</Link>
-                            <a href="/data/CharleyLiu_Resume.pdf" className="navbar-text-link" download>Resume</a>
+                            <a href="/data/CharleyLiu_Resume.pdf" className="navbar-text-link" target="_blank" download>Resume</a>
                         </div>}
                     </div>
                 </ul>
