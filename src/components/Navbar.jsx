@@ -8,6 +8,19 @@ const loadAnimation = {
     animate: {y: 0},
 }
 
+const dropdownVariants = {
+    open: {
+        display: "flex",
+        opacity: 1
+    },
+    closed: { 
+        opacity: 0,
+        transitionEnd: {
+            display: "none"
+        }
+    }
+}
+
 /**
  * A function that returns a <header></header> element containing a navbar for the website
  * 
@@ -89,12 +102,17 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                           alt="dropdown" 
                         />
 
-                        {dropdownActive &&
-                        <div className="dropdown-links">
+                        <motion.div 
+                          className="dropdown-links"
+                          animate={ dropdownActive ? "open" : "closed" }
+                          variants={ dropdownVariants }
+                          transition={{ duration: 0.3 }}
+                          initial={false}
+                        >
                             <Link to="/" className="navbar-text-link">Home</Link>
                             <Link to="/projects/" className="navbar-text-link">Projects</Link>
                             <a href="/data/CharleyLiu_Resume.pdf" className="navbar-text-link" target="_blank" download>Resume</a>
-                        </div>}
+                        </motion.div>
                     </div>
                 </ul>
             </nav>
