@@ -113,7 +113,8 @@
                 "Minesweeper": {
                     "topics": [
                         "Java",
-                        "AWT & Swing"
+                        "AWT",
+                        "Swing"
                     ],
                     "description": "A simple minesweeper game written with Java using swing and AWT.",
                     "long_description": "A simple minesweeper game written with Java using swing and AWT. The minesweeper application allows users to play a game of minesweeper in preset difficulties or create their own custom difficulty with set dimensions and number of mines.",
