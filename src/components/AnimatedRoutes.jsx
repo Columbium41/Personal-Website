@@ -18,7 +18,9 @@ function AnimatedRoutes({ data, setDocumentTitle, searchQuery, setSearchQuery })
     const location = useLocation();
 
     return (
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" onExitComplete={() => {
+            window.scrollTo(0, 0);
+        }}>
             {/* Pass in the location of the browser into Routes as a prop */}
             <Routes location={location} key={location.pathname}>
                 <Route 
