@@ -11,10 +11,9 @@ import '../css/Projects.css';
  * 
  * @returns An <AnimatedPage></AnimatedPage> component containing a page displaying a list of <ProjectCard></ProjectCard> components
  */
-function Projects({ data, setDocumentTitle }) {
+function Projects({ data, setDocumentTitle, searchQuery, setSearchQuery }) {
     const allProjects = Object.entries(data.content.portfolio.projects);
 
-    const [searchQuery, setSearchQuery] = useState('');
     const [projects, setProjects] = useState(allProjects);
     
     // Change the document's title on render
@@ -54,6 +53,7 @@ function Projects({ data, setDocumentTitle }) {
                 placeholder="Search for projects/topics"
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="projects-search-bar"
+                value={searchQuery}
             />
 
             <div className="card-container-grid">

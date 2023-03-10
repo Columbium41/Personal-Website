@@ -13,7 +13,7 @@ import { AnimatePresence } from 'framer-motion';
  * 
  * @returns {JSX.Element} An <AnimatePresence></AnimatePresence> component which contains Routes to specific pages
  */
-function AnimatedRoutes({ data, setDocumentTitle }) {
+function AnimatedRoutes({ data, setDocumentTitle, searchQuery, setSearchQuery }) {
     // Get the current location and pass it as a prop to the Routes component
     const location = useLocation();
 
@@ -27,7 +27,12 @@ function AnimatedRoutes({ data, setDocumentTitle }) {
                 />
                 <Route 
                     exact path="/projects" 
-                    element={<Projects data={data} setDocumentTitle={setDocumentTitle} />} 
+                    element={<Projects 
+                                data={data} 
+                                setDocumentTitle={setDocumentTitle} 
+                                searchQuery={searchQuery}
+                                setSearchQuery={setSearchQuery}
+                             />} 
                 />
                 <Route 
                     exact path="/projects/:id" 

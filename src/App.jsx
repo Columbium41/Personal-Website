@@ -6,7 +6,7 @@ import useFetch from '/src/hooks/useFetch';
 import ErrorOverlay from '/src/components/ErrorOverlay';
 import LoadingOverlay from '/src/components/LoadingOverlay';
 import useThemeDetector from './hooks/useThemeDetector';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AnimatedRoutes from './components/AnimatedRoutes';
 import useDocumentTitle from './hooks/useDocumentTitle';
 
@@ -45,6 +45,9 @@ function App() {
   // Set the document's title to 'Homepage'
   const {setDocumentTitle} = useDocumentTitle("Homepage");
 
+  // Search query for projects
+  const [searchQuery, setSearchQuery] = useState('');
+
   // Create an effect hook which runs the changeTheme function everytime the web page theme changes
   useEffect(() => {
     changeTheme(isDarkTheme);
@@ -67,7 +70,12 @@ function App() {
 
           {/* Main content */}
           <main>
-            <AnimatedRoutes data={data} setDocumentTitle={setDocumentTitle} />
+            <AnimatedRoutes 
+              data={data} 
+              setDocumentTitle={setDocumentTitle} 
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+            />
           </main>
 
           {/* Footer */}
