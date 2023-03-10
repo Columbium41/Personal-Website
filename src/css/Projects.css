@@ -1,5 +1,20 @@
+.projects-search-bar {
+    display: block;
+    width: calc(100% - 2ch);
+    margin: 2ch auto;
+    font-size: 1.1rem;
+    background-color: var(--bg-secondary);
+    padding: 1ch 0.5rem;
+    border: none;
+    color: var(--fg-primary);
+    border-radius: 3px;
+    transition: outline 0.1s;
+}
+.projects-search-bar:focus {
+    outline: 2px solid var(--fg-varient);
+}
+
 .card-container-grid {
-    margin-top: 3ch;
     display: grid;
     gap: 3ch 1ch;
     grid-template-columns: 1fr 1fr;
