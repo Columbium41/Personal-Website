@@ -2,13 +2,13 @@
     "content": {
         "portfolio": {
             "programming_skills": [
+                "Java",
+                "Python",
                 "HTML",
                 "CSS", 
                 "JavaScript",
                 "React",
-                "Node.js",
-                "Java",
-                "Python"
+                "Node.js"
             ],
             "dev_tools": [
                 "VSCode",
