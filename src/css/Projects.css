@@ -28,10 +28,12 @@
     align-items: center;
     background-color: var(--bg-secondary);
     border-radius: 1ch;
-    border: 1px groove var(--fg-primary);
+    outline: 2px solid var(--fg-primary);
+    transition: outline 0.2s;
 }
 .project-card:hover {
     cursor: pointer;
+    outline: 2px solid var(--fg-tertiary);
 }
 .project-thumbnail-card {
     display: block;
