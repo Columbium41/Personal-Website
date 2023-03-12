@@ -30,16 +30,17 @@ function Projects({ data, setDocumentTitle, searchQuery, setSearchQuery }) {
             setProjects(allProjects.filter((project) => {
                 const title = project[0].toLowerCase().replace("_", " ");
                 const topics = project[1].topics;
+                const query = searchQuery.toLowerCase();
     
                 // Search for topic matches
                 for (const topic of topics) {
-                    if (topic.toLowerCase() === searchQuery.toLowerCase()) {
+                    if (topic.toLowerCase().includes(query) || query.includes(topic.toLowerCase())) {
                         return true;
                     }
                 }
     
                 // Search if title includes search query
-                return title.includes(searchQuery.toLowerCase());
+                return title.includes(query);
             }));   
         }
     }, [searchQuery])
