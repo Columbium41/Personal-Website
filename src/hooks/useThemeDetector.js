@@ -8,6 +8,11 @@ import { useState, useEffect } from "react";
 function useThemeDetector() {
     // A function to get the default theme of the web browser
     const getCurrentTheme = () => {
+        const lastUsedTheme = localStorage.getItem("theme");
+        if (lastUsedTheme !== null) {
+            return (lastUsedTheme === 'true');
+        }
+
         return window.matchMedia("(prefers-color-scheme: dark)").matches;
     }
 
@@ -26,6 +31,10 @@ function useThemeDetector() {
       darkThemeMq.addEventListener("change", mqListener);
       return () => darkThemeMq.removeEventListener("change", mqListener);
     }, []);
+
+    window.onunload = () => {
+        localStorage.setItem("theme", isDarkTheme);
+    }
 
     return {isDarkTheme, setIsDarkTheme};
 }
