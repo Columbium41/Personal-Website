@@ -8,7 +8,7 @@ import '../css/Footer.css';
 function Footer() {
     return (
         <footer>
-            <p>Created by Charley Liu with <i className="fa-brands fa-react"></i> and <i class="fa-brands fa-node-js"></i> - View&nbsp;
+            <p>Created by Charley Liu with <i className="fa-brands fa-react"></i> and <i className="fa-brands fa-node-js"></i> - View&nbsp;
                 <a 
                   href="https://github.com/Columbium41/Personal-Website" 
                   target="_blank"
