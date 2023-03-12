@@ -55,18 +55,29 @@
     transform: translateY(-0.5ch);
 }
 
-.contacts-list {
-    list-style: disc inside;
-    margin-top: 1ch;
-    text-indent: 0.5rem;
+.contacts {
+    width: 90%;
+    margin: 2ch auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3ch;
 }
-.contacts-list i {
-    margin-right: 3px;
+.contacts a {
+    width: 20%;
 }
-.contacts-list li:not(:last-of-type) {
-    margin-bottom: 0.5ch;
+.contacts img {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+} 
+.contacts a:nth-child(3) img {
+    padding: 6px;
 }
-
+.contacts a:nth-child(4) img {
+    padding: 6px;
+}
 
 
 /* Adjust number of cards per row in card containers */
@@ -105,5 +116,18 @@
 @media only screen and (max-width: calc(600px + 4ch)) {
     .profile {
         padding: 0 2ch;
+    }
+}
+
+/* Adjust spacing between social links */
+@media only screen and (max-width: 600px) {
+    .contacts {
+        gap: 1ch;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .contacts {
+        width: 100%;
+        gap: 0;
     }
 }

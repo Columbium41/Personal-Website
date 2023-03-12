@@ -52,14 +52,33 @@ function Home({ data, setDocumentTitle }) {
             {/* About Me Section */}
             <div className="text-section w-100">
                 <h2 className="section-header">About Me</h2>
+
                 <p>
-                    Hello, my name is Charley. 
-                    I'm a first-year Computer Science undergrad student at the University of Ottawa with a passion for desigining software.
-                    Currently, I'm pursuing a 5 year Computer Science co-op degree while also learning web development on the side.
-                    My hobbies include Music, Chess, Weight Lifting, and Rhythm Games.
-                    When I'm not doing academic work or enjoying leisure time, 
-                    I like to work on fun and interesting <Link to="/projects" className="text-link">projects</Link> to help expand my knowledge and skills!
+                    Hello, I'm a first-year Computer Science student at the University of Ottawa and an aspiring software developer.
+                    I'm currently pursuing a 5 year co-op Computer Science degree while also learning web development on the side.
+                    Some of my non-coding related hobbies are listening to music and playing tabletop/online games.
+                    When I'm not playing games or doing school work, 
+                    I like to create <Link to="/projects" className="text-link">personal projects</Link> to enhance my programming and design skills. <br></br><br></br>
+                    If you like what I do or want to get in touch, please consider reaching out to me on any of these platforms:
                 </p>
+
+                <div className="contacts">
+                    <a href="https://github.com/Columbium41" target="_blank">
+                        <img src="/images/github.svg" alt="Github" />
+                    </a>
+                    <a href="https://linkedin.com/in/charleyliu-uo" target="_blank">
+                        <img src="/images/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="mailto:charleyliu716@gmail.com" target="_blank">
+                        <img src="/images/gmail.svg" alt="Gmail" />
+                    </a>
+                    <a href="https://discordapp.com/users/334487185765957634" target="_blank">
+                        <img src="/images/discord.svg" alt="Discord" />
+                    </a>
+                    <a href="https://www.instagram.com/charle_yy/" target="_blank">
+                        <img src="/images/instagram.svg" alt="Instagram" />
+                    </a>
+                </div>
             </div>
 
             {/* Programming Skills Section */}
@@ -81,46 +100,6 @@ function Home({ data, setDocumentTitle }) {
                         <SkillCard skill={skill} key={index}/>
                     ))}
                 </div>
-            </div>
-
-            {/* Contacts + Socials */}
-            <div className="text-section w-100">
-                <h2 className="section-header">Contacts & Socials</h2>
-                <p>
-                    Feel free to contact me on any of the following platforms for any personal, business, or collaboration related inquiries.
-                </p>
-                <ul className="contacts-list">
-                    <li>
-                        <i className="fa-solid fa-envelope"></i> 
-                        <a 
-                          href="mailto:charleyliu716@gmail.com" 
-                          target="_blank"
-                          className="text-link"
-                        >
-                            Gmail {'(Personal & Business)'}
-                        </a>
-                    </li>
-                    <li>
-                        <i className="fa-brands fa-linkedin"></i> 
-                        <a 
-                          href="https://www.linkedin.com/in/charleyliu-uo/" 
-                          target="_blank"
-                          className="text-link"
-                        >
-                            LinkedIn {'(Networking & Business)'}
-                        </a>
-                    </li>
-                    <li>
-                        <i className="fa-brands fa-github"></i> 
-                        <a 
-                          href="https://github.com/Columbium41" 
-                          target="_blank"
-                          className="text-link"
-                        >
-                            Github {'(Open-Source Collaboration)'}
-                        </a>
-                    </li>
-                </ul>
             </div>
         </AnimatedPage>
     );
