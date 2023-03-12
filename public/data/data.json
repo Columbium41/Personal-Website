@@ -64,7 +64,7 @@
                         "React"
                     ],
                     "description": "A web application that lets users share files with generated links.",
-                    "long_description": "Created a web application that lets users share files with generated links. Files are shared using WebRTC Peer-to-Peer (P2P) connections.",
+                    "long_description": "Created a web application during a 36-hour hackathon that lets users share files with generated links. Files are shared using WebRTC Peer-to-Peer (P2P) connections.",
                     "date_created": "March 2023",
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/223243911-096227e2-f112-4e79-8502-ab3064606152.jpg",
@@ -81,7 +81,7 @@
                         "Node.js",
                         "Discord API"
                     ],
-                    "description": "A simple discord music bot written in Javascript with the Node.js framework",
+                    "description": "A simple discord music bot written in Javascript using the Node.js framework",
                     "long_description": "A simple discord music bot written in Javascript with the Node.js framework. The discord bot can play music and manage a queue of songs in a Discord voice channel.",
                     "date_created": "November 2021",
                     "thumbnails": [
