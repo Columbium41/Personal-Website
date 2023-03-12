@@ -66,16 +66,6 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
 
                 {/* Navbar Links */}
                 <ul className="navbar-links">
-                    {/* Social Icon Links */}
-                    <li className="icon-links">
-                        <a href="https://github.com/Columbium41" target="_blank">
-                            <img src="/images/github.svg" alt="github" className={"navbar-icon " + ((isDarkTheme) ? "light-hover-bg" : "dark-hover-bg")} />
-                        </a>
-                        <a href="https://www.linkedin.com/in/charleyliu-uo/" target="_blank">
-                            <img src="/images/linkedin.svg" alt="linkedin" className="navbar-icon dark-hover" />
-                        </a>
-                    </li>
-
                     {/* Web page links & Resume download link */}
                     <li><Link to="/" className="navbar-text-link">Home</Link></li>
                     <li><Link to="/projects/" className="navbar-text-link">Projects</Link></li>

@@ -14,7 +14,8 @@ header {
     justify-content: space-around;
     font-family: 'Roboto';
     font-size: 1.1rem;
-    width: 900px;
+    width: 60%;
+    min-width: 700px;
     margin: 0 auto;
 }
 .navbar-logo {
@@ -59,10 +60,6 @@ header {
     list-style: none;
     gap: 5ch;
     padding: 0.5ch 0;
-}
-.icon-links {
-    display: flex;
-    gap: 1ch;
 }
 .resume {
     border: 1px solid var(--fg-varient);
@@ -151,21 +148,12 @@ header {
     gap: 1ch;
 }
 
-/* Resize navbar and shrink navbar gap */
-@media only screen and (max-width: 900px) {
-    .navbar {
-        width: 100% !important;   
-    }
-    .navbar-links {
-        gap: 2ch !important;
-    }
-    .icon-links {
-        gap: 0 !important;
-    }
-}
-  
 /* Modify navbar to contain a drop-down menu */
 @media only screen and (max-width: 700px) {
+    .navbar {
+        width: 100% !important;
+        min-width: unset;
+    }
     .navbar-links {
         gap: 1ch !important;
     }
