@@ -2,6 +2,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { useEffect } from 'react';
 import SkillCard from './SkillCard';
 import AnimatedPage from "./AnimatedPage";
+import CardContainer from './CardContainer';
 import { Link } from 'react-router-dom';
 import '../css/Home.css';
 
@@ -82,25 +83,10 @@ function Home({ data, setDocumentTitle }) {
             </div>
 
             {/* Programming Skills Section */}
-            <div className="skills w-100">
-                <h2 className="section-header">Technical Skills</h2>
-                <div className="card-container-flex">
-                    {/* Dynamically render each skill as a <SkillCard></SkillCard> component */}
-                    {programmingSkills.map((skill, index) => (
-                        <SkillCard skill={skill} key={index} />
-                    ))}
-                </div>
-            </div>
+            <CardContainer header="Technical Skills" cards={programmingSkills} />
             
             {/* Dev Tools Section */}
-            <div className="skills w-100">
-                <h2 className="section-header">Dev Tools</h2>
-                <div className="card-container-flex">
-                    {devTools.map((skill, index) => (
-                        <SkillCard skill={skill} key={index}/>
-                    ))}
-                </div>
-            </div>
+            <CardContainer header="Dev Tools" cards={devTools} />
         </AnimatedPage>
     );
 }
