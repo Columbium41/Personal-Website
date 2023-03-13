@@ -11,13 +11,15 @@ const loadAnimation = {
 const dropdownVariants = {
     open: {
         display: "flex",
-        opacity: 1
+        opacity: 1,
+        top: "calc(100% + 0.5ch)"
     },
     closed: { 
         opacity: 0,
+        top: "0%",
         transitionEnd: {
             display: "none"
-        }
+        },
     }
 }
 
