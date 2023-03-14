@@ -40,7 +40,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 1ch 1ch 0 0;
+    border-radius: calc(1ch - 2px) calc(1ch - 2px) 0 0;
     aspect-ratio: 16/9;
 }
 .project-thumbnail {
