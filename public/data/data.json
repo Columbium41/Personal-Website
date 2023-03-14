@@ -61,7 +61,8 @@
                         "HTML",
                         "CSS",
                         "JavaScript",
-                        "React"
+                        "React",
+                        "Hackathon"
                     ],
                     "description": "A web application that lets users share files with generated links.",
                     "long_description": "Created a web application during a 36-hour hackathon that lets users share files with generated links. Files are shared using WebRTC Peer-to-Peer (P2P) connections.",
