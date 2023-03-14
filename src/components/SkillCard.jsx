@@ -28,6 +28,10 @@ function SkillCard({ skill, cardNumber, cardsPerRow }) {
         },
         hover: {
             y: "-0.5ch",
+            transition: {
+                ease: "easeIn",
+                duration: 0.05
+            }
         }
     }
 
