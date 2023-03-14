@@ -1,4 +1,21 @@
 import { Link } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+
+const projectCardVariants = {
+    hidden: {
+        opacity: 0,
+        scale: 0.3
+    },
+    animate: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            duration: 0.5,
+            delay: 0.4
+        }
+    },
+}
 
 /**
  * A function that returns a <Link></Link> element containing a project's title and short description and a redirect
@@ -9,12 +26,23 @@ import { Link } from "react-router-dom";
  *                        and contains a project's title and short description 
  */
 function ProjectCard({ project }) {
+    const controls = useAnimation();
+
     const projectTitle = project[0];
     const projectData = project[1];
 
+    useEffect(() => {
+        controls.start("animate");
+    }, [])
+
     return (
         <Link to={"/projects/" + projectTitle} className="card-link">
-            <div className="project-card">
+            <motion.div 
+              className="project-card"
+              variants={projectCardVariants}
+              initial="hidden"
+              animate={controls}
+            >
                 {/* Project Thumbnail */}
                 <div>
                     <img src={"/images/" + projectTitle.toLowerCase() + ".png"} 
@@ -27,7 +55,7 @@ function ProjectCard({ project }) {
                     <h3>{projectTitle.replace("_", " ")}</h3>
                     <p>{projectData.description}</p>
                 </div>
-            </div>
+            </motion.div>
         </Link>
     )
 }
