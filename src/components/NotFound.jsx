@@ -24,10 +24,10 @@ function NotFound({ setDocumentTitle }) {
             </Link>
 
             {/* 404 error message */}
-            <h2 className="text-center">404 Page Not Found</h2>
+            <h2 className="text-center">Page Not Found</h2>
             <p>
                 Looks like the page you were looking for was not found. 
-                Please make sure there were no typos in the URL and try navigating to the homepage or refresh the page.
+                Please make sure there were no typos in the URL and try navigating to the homepage.
             </p>
         </AnimatedPage>
     )

@@ -1,4 +1,4 @@
 .not-found h2 {
-    margin-bottom: 1ch;
+    margin: 1ch 0;
     color: var(--error);
 }
