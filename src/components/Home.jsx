@@ -41,8 +41,8 @@ function Home({ data, setDocumentTitle }) {
                           cursor={true}
                           cursorBlinking={true}
                           loop={true}
-                          typeSpeed={80}
-                          deleteSpeed={60}
+                          typeSpeed={60}
+                          deleteSpeed={45}
                         />
                     </span>
                 </div>
