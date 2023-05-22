@@ -47,6 +47,12 @@
     padding: 6px;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+}
+
 /* Adjust profile thumbnail */
 @media only screen and (max-width: 520px) {
     .profile {

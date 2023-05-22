@@ -2,20 +2,86 @@
     "content": {
         "portfolio": {
             "technical_skills": [
-                "Java",
-                "Python",
-                "HTML",
-                "CSS", 
-                "JavaScript",
-                "React",
-                "Node.js"
+                {
+                    "name": "Java",
+                    "tags": [
+                        "Programming Languages"
+                    ]
+                },
+                {
+                    "name": "Python",
+                    "tags": [
+                        "Programming Languages"
+                    ]
+                },
+                {
+                    "name": "HTML",
+                    "tags": [
+                        "Web Technologies"
+                    ]
+                },
+                {
+                    "name": "CSS",
+                    "tags": [
+                        "Web Technologies"
+                    ]
+                },
+                {
+                    "name": "JavaScript",
+                    "tags": [
+                        "Programming Languages",
+                        "Web Technologies"
+                    ]
+                },
+                {
+                    "name": "React",
+                    "tags": [
+                        "Web Technologies",
+                        "Libraries"
+                    ]
+                },
+                {
+                    "name": "Node.js",
+                    "tags": [
+                        "Web Technologies",
+                        "Frameworks"
+                    ]
+                },
+                {
+                    "name": "Ruby",
+                    "tags": [
+                        "Programming Languages"
+                    ]
+                },
+                {
+                    "name": "Rails",
+                    "tags": [
+                        "Frameworks",
+                        "Web Technologies"
+                    ]
+                }
             ],
             "dev_tools": [
-                "VSCode",
-                "Github",
-                "Git",
-                "Zsh",
-                "Netlify"
+                {
+                    "name": "VSCode",
+                    "tags": []
+                },
+                {
+                    "name": "Github",
+                    "tags": []
+                },
+                {
+                    "name": "Git",
+                    "tags": []
+                },
+                {
+                    "name": "Zsh",
+                    "tags": []
+                },
+                {
+                    "name": "Netlify",
+                    "tags": []
+                }
             ],
             "projects": {
                 "Expense_Tracker": {

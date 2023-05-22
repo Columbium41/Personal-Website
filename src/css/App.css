@@ -9,7 +9,6 @@
     text-decoration-color: var(--bg-secondary);
     text-decoration-thickness: 0.25ch;
     text-underline-offset: var(--underline-offset);
-    margin-bottom: calc(var(--underline-offset) + 0.2ch);
     text-indent: 0.5rem;
 }
 .text-section p {

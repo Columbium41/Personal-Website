@@ -26,6 +26,32 @@
     transition-timing-function: ease-out;
 }
 
+.tags-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3ch 0.8ch;
+    flex-wrap: wrap;
+}
+.tag-button {
+    padding: 0.8ch 1ch;
+    min-width: 5ch;
+    background: var(--bg-secondary);
+    color: var(--fg-secondary);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: filter 0.3s;
+}
+.tag-button[data-active="true"] {
+    border: 1px solid var(--fg-varient);
+}
+.tag-button:hover {
+    cursor: pointer;
+    filter: brightness(125%);
+}
+
 /* Adjust number of cards per row in card containers */
 @media only screen and (max-width: 550px) {
     .skill-card {
