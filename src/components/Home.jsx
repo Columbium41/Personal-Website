@@ -1,6 +1,5 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { useEffect } from 'react';
-import SkillCard from './SkillCard';
 import AnimatedPage from "./AnimatedPage";
 import CardContainer from './CardContainer';
 import { Link } from 'react-router-dom';
@@ -19,7 +18,7 @@ function Home({ data, setDocumentTitle }) {
     const typewriterOptions = data.content.typewriter_options;
 
     // Get each skill listed in the portfolio section 
-    const programmingSkills = data.content.portfolio.programming_skills;
+    const technicalSkills = data.content.portfolio.technical_skills;
     const devTools = data.content.portfolio.dev_tools;
 
     // Change the document's title on render
@@ -55,10 +54,10 @@ function Home({ data, setDocumentTitle }) {
                 <h2 className="section-header">About Me</h2>
 
                 <p>
-                    Hello, I'm a first-year Computer Science student at the University of Ottawa and an aspiring software developer.
-                    I'm currently pursuing a 5 year co-op Computer Science degree while also learning web development on the side.
+                    Hello I'm Charley, a first-year Computer Science student at the University of Ottawa.
+                    I'm currently pursuing a Co-op Computer Science degree while also learning web development on the side.
                     Some of my non-coding related hobbies are listening to music and playing tabletop/online games.
-                    When I'm not playing games or doing school work, 
+                    When I have free time, 
                     I like to create <Link to="/projects" className="text-link">personal projects</Link> to enhance my programming and design skills. <br></br><br></br>
                     If you like what I do or want to get in touch, please consider reaching out to me on any of these platforms:
                 </p>
@@ -83,7 +82,7 @@ function Home({ data, setDocumentTitle }) {
             </div>
 
             {/* Programming Skills Section */}
-            <CardContainer header="Technical Skills" cards={programmingSkills} />
+            <CardContainer header="Technical Skills" cards={technicalSkills} />
             
             {/* Dev Tools Section */}
             <CardContainer header="Dev Tools" cards={devTools} />

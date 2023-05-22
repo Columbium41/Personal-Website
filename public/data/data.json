@@ -1,7 +1,7 @@
 {
     "content": {
         "portfolio": {
-            "programming_skills": [
+            "technical_skills": [
                 "Java",
                 "Python",
                 "HTML",
@@ -149,7 +149,7 @@
         },
         "typewriter_options": [
             "Computer Science Student", 
-            "Aspiring Software Developer"
+            "Full Stack Developer"
         ]
     }
 }
