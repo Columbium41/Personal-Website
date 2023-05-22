@@ -81,7 +81,7 @@
     padding: 0.25ch 0.5ch;
     color: var(--fg-secondary);
 }
-.project-metadata p {
+.project-metadata-link {
     position: relative;
     top: calc(-0.25ch / 2);
 }

@@ -73,7 +73,7 @@ function ProjectPage({ data, setDocumentTitle }) {
                     {Object.entries(projectData.links).map((array, index) => (
                         <div className="project-metadata" key={index}>
                             <h4>{ array[0].replace("_", " ") + ":" }</h4>
-                            <p className="break-word">
+                            <p className="break-word project-metadata-link">
                                 <a href={ array[1] } target="_blank" className="text-link" >{ array[1] }</a>
                             </p>
                         </div>
