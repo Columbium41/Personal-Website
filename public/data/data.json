@@ -27,7 +27,7 @@
                     ]
                 },
                 {
-                    "name": "JavaScript",
+                    "name": "Javascript",
                     "tags": [
                         "Programming Languages",
                         "Web Technologies"
@@ -88,12 +88,12 @@
                     "topics": [
                         "HTML",
                         "CSS",
-                        "JavaScript",
+                        "Javascript",
                         "React",
                         "Node.js"
                     ],
                     "description": "An Expense Tracker Web App built with the React Javascript Library",
-                    "long_description": "An Expense Tracker Web App built with the React Javascript Library. Expense Tracker allows users to track their expenses using CRUD (Create, Read, Update, Delete) functions. User expense data is stored using JavaScript local storage.",
+                    "long_description": "An Expense Tracker Web App built with the React Javascript Library. Expense Tracker allows users to track their expenses using CRUD (Create, Read, Update, Delete) functions. User expense data is stored using Javascript local storage.",
                     "date_created": "November 2022",
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/216506537-6acf4fef-3789-42ff-a40a-99b24844949d.png",
@@ -108,10 +108,10 @@
                     "topics": [
                         "HTML",
                         "CSS",
-                        "JavaScript"
+                        "Javascript"
                     ],
                     "description": "A web application that lets users create, generate, and solve mazes.",
-                    "long_description": "A web application that lets users create, generate, and solve mazes with various Graph Theory algorithms. The web app utilizes HTML Canvas to display graphics and vanilla JavaScript to handle user interface and visualization.",
+                    "long_description": "A web application that lets users create, generate, and solve mazes with various Graph Theory algorithms. The web app utilizes HTML Canvas to display graphics and vanilla Javascript to handle user interface and visualization.",
                     "date_created": "November 2022",
                     "thumbnails": [
                         "https://user-images.githubusercontent.com/75919484/210094884-8bf8b19f-9673-44f7-b23a-6d7a619b009b.png",
@@ -126,7 +126,7 @@
                     "topics": [
                         "HTML",
                         "CSS",
-                        "JavaScript",
+                        "Javascript",
                         "React",
                         "Hackathon"
                     ],
@@ -144,7 +144,7 @@
                 },
                 "Symphony_Bot": {
                     "topics": [
-                        "JavaScript",
+                        "Javascript",
                         "Node.js",
                         "Discord API"
                     ],
@@ -163,7 +163,7 @@
                     "topics": [
                         "HTML",
                         "CSS",
-                        "JavaScript"
+                        "Javascript"
                     ],
                     "description": "A website that allows users to play TicTacToe against a CPU opponent",
                     "long_description": "A website that allows users to play TicTacToe against a CPU opponent. There are 4 CPU difficulties included: Easy, Medium, Hard, and Impossible. The impossible CPU mode utilizes the Minimax Algorithm.",
@@ -211,7 +211,29 @@
                         "Website": "https://columbium41.github.io/Penguins-Info-Page/"
                     }
                 }
-            }
+            },
+            "work": [
+                {
+                    "role": "Full Stack Developer",
+                    "employer": "University of Ottawa - CEED",
+                    "dates": [
+                        {
+                            "start_date": "May 2023",
+                            "end_date": "Aug 2023",
+                            "full_time": true
+                        }
+                    ],
+                    "uses": [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "Ruby",
+                        "Rails"
+                    ],
+                    "currently_employed": true,
+                    "key_points": []
+                }
+            ]
         },
         "typewriter_options": [
             "Computer Science Student", 

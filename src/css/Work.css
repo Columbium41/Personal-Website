@@ -1,0 +1,46 @@
+.work-experience {
+}
+
+.positions {
+    margin-top: 0.3ch;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75ch;
+}
+
+.position-card {
+    padding: 1ch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border: 3px solid var(--fg-primary);
+    border-radius: 10px;
+    row-gap: 0.5ch;
+}
+
+.position-card .role {
+    color: var(--fg-secondary);
+}
+
+.position-card .role,
+.position-card .employer {
+    align-self: end;
+}
+
+.position-card .employer,
+.position-card .uses {
+    justify-self: end;
+}
+
+.uses {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    height: 100%;
+}
+
+.uses img {
+    display: block;
+    width: 40px;
+    object-fit: contain;
+}

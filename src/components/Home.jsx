@@ -2,6 +2,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { useEffect } from 'react';
 import AnimatedPage from "./AnimatedPage";
 import CardContainer from './CardContainer';
+import Work from './Work';
 import { Link } from 'react-router-dom';
 import '../css/Home.css';
 
@@ -20,6 +21,8 @@ function Home({ data, setDocumentTitle }) {
     // Get each skill listed in the portfolio section 
     const technicalSkills = data.content.portfolio.technical_skills;
     const devTools = data.content.portfolio.dev_tools;
+
+    const workExperience = data.content.portfolio.work;
 
     // Change the document's title on render
     useEffect(() => {
@@ -80,6 +83,9 @@ function Home({ data, setDocumentTitle }) {
                     </a>
                 </div>
             </div>
+
+            {/* Work Experience Section */}
+            <Work data={workExperience}></Work>
 
             {/* Programming Skills Section */}
             <CardContainer header="Technical Skills" cards={technicalSkills} />
