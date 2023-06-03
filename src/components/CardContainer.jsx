@@ -58,7 +58,7 @@ function CardContainer({ header, cards }) {
                             tagContainer.current.children[currentActive].setAttribute("data-active", false);
                             tagContainer.current.children[index].setAttribute("data-active", true);
                             setCurrentActive(index);
-                            setCurrentFilter(tagContainer.current.children[index].innerHTML);
+                            setCurrentFilter(tagContainer.current.children[index].innerText);
                         }}>
                             { tag }
                     </button>
