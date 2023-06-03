@@ -92,6 +92,13 @@
                         "React",
                         "Node.js"
                     ],
+                    "topic_thumbnails": [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "React",
+                        "Node.js"
+                    ],
                     "description": "An Expense Tracker Web App built with the React Javascript Library",
                     "long_description": "An Expense Tracker Web App built with the React Javascript Library. Expense Tracker allows users to track their expenses using CRUD (Create, Read, Update, Delete) functions. User expense data is stored using Javascript local storage.",
                     "date_created": "November 2022",
@@ -106,6 +113,11 @@
                 },
                 "Maze_Solver": {
                     "topics": [
+                        "HTML",
+                        "CSS",
+                        "Javascript"
+                    ],
+                    "topic_thumbnails": [
                         "HTML",
                         "CSS",
                         "Javascript"
@@ -130,6 +142,12 @@
                         "React",
                         "Hackathon"
                     ],
+                    "topic_thumbnails": [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "React"
+                    ],
                     "description": "A web application that lets users share files with generated links.",
                     "long_description": "Created a web application during a 36-hour hackathon that lets users share files with generated links. Files are shared using WebRTC Peer-to-Peer (P2P) connections.",
                     "date_created": "March 2023",
@@ -148,6 +166,10 @@
                         "Node.js",
                         "Discord API"
                     ],
+                    "topic_thumbnails": [
+                        "Javascript",
+                        "Node.js"
+                    ],
                     "description": "A simple discord music bot written in Javascript using the Node.js framework",
                     "long_description": "A simple discord music bot written in Javascript with the Node.js framework. The discord bot can play music and manage a queue of songs in a Discord voice channel.",
                     "date_created": "November 2021",
@@ -161,6 +183,11 @@
                 },
                 "Tic-Tac-Toe": {
                     "topics": [
+                        "HTML",
+                        "CSS",
+                        "Javascript"
+                    ],
+                    "topic_thumbnails": [
                         "HTML",
                         "CSS",
                         "Javascript"
@@ -183,6 +210,9 @@
                         "AWT",
                         "Swing"
                     ],
+                    "topic_thumbnails": [
+                        "Java"
+                    ],
                     "description": "A simple minesweeper game written with Java using swing and AWT.",
                     "long_description": "A simple minesweeper game written with Java using swing and AWT. The minesweeper application allows users to play a game of minesweeper in preset difficulties or create their own custom difficulty with set dimensions and number of mines.",
                     "date_created": "January 2021",
@@ -197,6 +227,10 @@
                 },
                 "Penguins_Infopage": {
                     "topics": [
+                        "HTML",
+                        "CSS"
+                    ],
+                    "topic_thumbnails": [
                         "HTML",
                         "CSS"
                     ],

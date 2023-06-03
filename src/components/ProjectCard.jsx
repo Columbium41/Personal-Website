@@ -54,6 +54,13 @@ function ProjectCard({ project }) {
                 <div className="project-card-text">
                     <h3>{projectTitle.replace("_", " ")}</h3>
                     <p>{projectData.description}</p>
+
+                    {/* Project icons */}
+                    <div className="project-icons">
+                        {projectData.topic_thumbnails.map((topic, index) => (
+                            <img src={"/images/" + topic.toLowerCase().replace(".", "").replace(" ", "_") + ".svg"} alt={topic + " logo"} key={index} />
+                        ))}
+                    </div>
                 </div>
             </motion.div>
         </Link>

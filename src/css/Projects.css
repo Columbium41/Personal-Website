@@ -14,6 +14,21 @@
     outline: 2px solid var(--fg-varient);
 }
 
+.project-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5ch;
+    gap: 2px;
+}
+.project-icons img {
+    display: block;
+    width: 40px;
+    object-fit: contain;
+}
+
 .card-container-grid {
     display: grid;
     gap: 3ch 1ch;
