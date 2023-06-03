@@ -1,8 +1,5 @@
-.work-experience {
-}
-
 .positions {
-    margin-top: 0.3ch;
+    margin-top: 0.5ch;
     display: flex;
     flex-direction: column;
     gap: 0.75ch;
