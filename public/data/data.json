@@ -219,7 +219,7 @@
                     "dates": [
                         {
                             "start_date": "May 2023",
-                            "end_date": "Aug 2023",
+                            "end_date": null,
                             "full_time": true
                         }
                     ],
@@ -230,7 +230,6 @@
                         "Ruby",
                         "Rails"
                     ],
-                    "currently_employed": true,
                     "key_points": []
                 }
             ]
