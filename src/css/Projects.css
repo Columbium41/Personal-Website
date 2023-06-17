@@ -1,7 +1,7 @@
 .projects-search-bar {
     display: block;
     width: calc(100% - 2ch);
-    margin: 2ch auto;
+    margin: 2ch auto 0.5ch auto;
     font-size: 1.1rem;
     background-color: var(--bg-secondary);
     padding: 1ch 0.5rem;
@@ -12,6 +12,10 @@
 }
 .projects-search-bar:focus {
     outline: 2px solid var(--fg-varient);
+}
+
+.projects-section .tags-container {
+    margin-bottom: 2ch;
 }
 
 .project-icons {
