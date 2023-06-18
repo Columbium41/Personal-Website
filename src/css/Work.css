@@ -1,11 +1,13 @@
 .positions {
     margin-top: 0.5ch;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.75ch;
 }
 
 .position-card {
+    width: 100%;
     padding: 1ch;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,4 +41,20 @@
     display: block;
     width: 40px;
     object-fit: contain;
+}
+
+@media only screen and (max-width: 600px) {
+    .position-card {
+        grid-template-columns: 1fr;
+    }
+    .position-card .employer,
+    .position-card .uses {
+        justify-self: unset;
+    }
+}
+
+@media only screen and (min-width: 3500px) {
+    .position-card {
+        width: calc(50% - 6px);
+    }
 }
