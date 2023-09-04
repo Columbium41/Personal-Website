@@ -57,7 +57,7 @@ function Home({ data, setDocumentTitle }) {
                 <h2 className="section-header">About Me</h2>
 
                 <p>
-                    Hello I'm Charley, a first-year Computer Science student at the University of Ottawa.
+                    Hello I'm Charley, a second year Computer Science student at the University of Ottawa.
                     I'm currently pursuing a Co-op Computer Science degree while also learning web development on the side.
                     Some of my non-coding related hobbies are listening to music and playing tabletop/online games.
                     When I have free time, 
