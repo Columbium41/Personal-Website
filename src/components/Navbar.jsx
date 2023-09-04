@@ -60,10 +60,14 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
             <nav className="navbar">
                 {/* Navbar Logo */}
                 <Link to={'/'}>
-                    <div className="navbar-logo" onMouseEnter={() => setIsHoveringLogo(true)} onMouseLeave={() => setIsHoveringLogo(false)}>
+                    <motion.div 
+                      className="navbar-logo" 
+                      onHoverStart={() => setIsHoveringLogo(true)} 
+                      onHoverEnd={() => setIsHoveringLogo(false)}
+                    >
                         <h2 id="logo-up">{'<'}Charley&nbsp;</h2>
                         <h2 id="logo-down">{'Liu/>'}</h2>
-                    </div>
+                    </motion.div>
                 </Link>
 
                 {/* Navbar Links */}
