@@ -71,7 +71,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                     {/* Web page links & Resume link */}
                     <li><Link to="/" className="navbar-text-link">Home</Link></li>
                     <li><Link to="/projects/" className="navbar-text-link">Projects</Link></li>
-                    <li><a href="/data/CharleyLiu_Resume.pdf" className="navbar-text-link resume" target="_blank">Resume</a></li>
+                    <li><a href="/data/CharleyLiu-Resume.pdf" className="navbar-text-link resume" target="_blank">Resume</a></li>
 
                     {/* Button to toggle the web page's theme */}
                     <div 
@@ -103,7 +103,7 @@ function Navbar({ isDarkTheme, setIsDarkTheme }) {
                         >
                             <Link to="/" className="navbar-text-link">Home</Link>
                             <Link to="/projects/" className="navbar-text-link">Projects</Link>
-                            <a href="/data/CharleyLiu_Resume.pdf" className="navbar-text-link" target="_blank">Resume</a>
+                            <a href="/data/CharleyLiu-Resume.pdf" className="navbar-text-link" target="_blank">Resume</a>
                         </motion.div>
                     </div>
                 </ul>

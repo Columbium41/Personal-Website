@@ -14,7 +14,14 @@
     align-items: center;
     border: 3px solid var(--fg-primary);
     border-radius: 10px;
-    row-gap: 0.5ch;
+    row-gap: 0.75ch;
+    overflow: hidden;
+    transition: border 0.5s;
+}
+
+.position-card:hover {
+    cursor: pointer;
+    border: 3px solid var(--fg-varient);
 }
 
 .position-card .role {
@@ -41,6 +48,18 @@
     display: block;
     width: 40px;
     object-fit: contain;
+}
+
+.bullet-points {
+    grid-column: 1 / -1;
+}
+
+.bullet-points li {
+    margin-left: 2ch;
+}
+
+.bullet-points li:not(:last-of-type) {
+    margin-bottom: 0.5ch;
 }
 
 @media only screen and (max-width: 600px) {

@@ -253,8 +253,13 @@
                     "dates": [
                         {
                             "start_date": "May 2023",
-                            "end_date": null,
+                            "end_date": "Aug 2023",
                             "full_time": true
+                        },
+                        {
+                            "start_date": "Sep 2023",
+                            "end_date": null,
+                            "full_time": false
                         }
                     ],
                     "uses": [
@@ -262,9 +267,16 @@
                         "CSS",
                         "Javascript",
                         "Ruby",
-                        "Rails"
+                        "Rails",
+                        "PostgreSQL"
                     ],
-                    "key_points": []
+                    "key_points": [
+                        "Maintained & implemented requested features for a Rails web app within a small team",
+                        "Utilized HTML forms and Rails controllers to create and update data within a PostgreSQL database",
+                        "Communicated with managers and supervisors on a weekly basis to document various requirements",
+                        "Followed & maintained industry standards with branching strategies, CI/CD, and staging/test servers",
+                        "Ensured code and logic was maintained properly through the use of tests & specs"
+                    ]
                 }
             ]
         },
