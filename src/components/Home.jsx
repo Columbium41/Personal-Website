@@ -75,9 +75,6 @@ function Home({ data, setDocumentTitle }) {
                     <a href="mailto:charleyliu716@gmail.com" target="_blank">
                         <img src="/images/gmail.svg" alt="Gmail" />
                     </a>
-                    <a href="https://discordapp.com/users/334487185765957634" target="_blank">
-                        <img src="/images/discord.svg" alt="Discord" />
-                    </a>
                     <a href="https://www.instagram.com/charle_yy/" target="_blank">
                         <img src="/images/instagram.svg" alt="Instagram" />
                     </a>
