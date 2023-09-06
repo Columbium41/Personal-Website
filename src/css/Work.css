@@ -62,6 +62,34 @@
     margin-bottom: 0.5ch;
 }
 
+.down-arrow {
+    margin-top: -0.75ch;
+    grid-column: 1 / -1;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.down-arrow svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s;
+}
+
+.down-arrow svg.collapse {
+    transform: rotate(0);
+    fill: var(--fg-primary);
+}
+.down-arrow svg.show {
+    transform: rotate(180deg);
+    fill: var(--fg-varient);
+}
+
+#down-arrow-stroke {
+    fill: inherit;
+    transition: fill 0.5s;
+}
+
 @media only screen and (max-width: 600px) {
     .position-card {
         grid-template-columns: 1fr;
@@ -69,6 +97,9 @@
     .position-card .employer,
     .position-card .uses {
         justify-self: unset;
+    }
+    .down-arrow {
+        margin-top: 0 !important;
     }
 }
 
