@@ -59,6 +59,10 @@
                         "Frameworks",
                         "Web Technologies"
                     ]
+                },
+                {
+                    "name": "PostgreSQL",
+                    "tags": ["Databases"] 
                 }
             ],
             "dev_tools": [
@@ -80,6 +84,10 @@
                 },
                 {
                     "name": "Netlify",
+                    "tags": []
+                },
+                {
+                    "name": "RubyMine",
                     "tags": []
                 }
             ],
