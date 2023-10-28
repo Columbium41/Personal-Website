@@ -15,36 +15,9 @@
                     ]
                 },
                 {
-                    "name": "HTML",
+                    "name": "C++",
                     "tags": [
-                        "Web Technologies"
-                    ]
-                },
-                {
-                    "name": "CSS",
-                    "tags": [
-                        "Web Technologies"
-                    ]
-                },
-                {
-                    "name": "Javascript",
-                    "tags": [
-                        "Programming Languages",
-                        "Web Technologies"
-                    ]
-                },
-                {
-                    "name": "React",
-                    "tags": [
-                        "Web Technologies",
-                        "Libraries"
-                    ]
-                },
-                {
-                    "name": "Node.js",
-                    "tags": [
-                        "Web Technologies",
-                        "Frameworks"
+                        "Programming Languages"
                     ]
                 },
                 {
@@ -54,15 +27,54 @@
                     ]
                 },
                 {
+                    "name": "HTML",
+                    "tags": [
+                        "Web Development"
+                    ]
+                },
+                {
+                    "name": "CSS",
+                    "tags": [
+                        "Web Development"
+                    ]
+                },
+                {
+                    "name": "Javascript",
+                    "tags": [
+                        "Programming Languages",
+                        "Web Development"
+                    ]
+                },
+                {
+                    "name": "React",
+                    "tags": [
+                        "Web Development",
+                        "Libraries"
+                    ]
+                },
+                {
+                    "name": "Node.js",
+                    "tags": [
+                        "Web Development",
+                        "Frameworks"
+                    ]
+                },
+                {
                     "name": "Rails",
                     "tags": [
                         "Frameworks",
-                        "Web Technologies"
+                        "Web Development"
                     ]
                 },
                 {
                     "name": "PostgreSQL",
                     "tags": ["Databases"] 
+                },
+                {
+                    "name": "Android Studio",
+                    "tags": [
+                        "Mobile Development"
+                    ]
                 }
             ],
             "dev_tools": [
@@ -88,6 +100,10 @@
                 },
                 {
                     "name": "RubyMine",
+                    "tags": []
+                },
+                {
+                    "name": "Firebase",
                     "tags": []
                 }
             ],
