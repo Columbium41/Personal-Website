@@ -108,6 +108,31 @@
                 }
             ],
             "projects": {
+                "Medihub": {
+                    "topics": [
+                        "Java",
+                        "Android Studio",
+                        "Firebase"
+                    ],
+                    "topic_thumbnails": [
+                        "Java",
+                        "Android Studio",
+                        "Firebase"
+                    ],
+                    "description": "A mobile Healthcare Appointment Management System which manages appointments between doctors and patients",
+                    "long_description": "Medihub is a mobile Healthcare Appointment Management System which manages appointments between doctors and patients. Users can request to create a Patient or Doctor account and can access various app features upon account approval by an Admin. App features include: viewing appointments (both patients and doctors), accepting or declining user registration requests (admin), and managing work shifts and appointments (doctors).",
+                    "date_created": "October 2023",
+                    "thumbnails": [
+                        "https://github.com/uOttawaSEGA2023/Medihub/assets/75919484/7c6ff21c-36b9-4037-b0a8-d494e3c53c0c",
+                        "https://github.com/uOttawaSEGA2023/Medihub/assets/75919484/27981071-efdf-4328-bf34-97109435b8c1",
+                        "https://github.com/uOttawaSEGA2023/Medihub/assets/75919484/1f19e4eb-147d-4458-a568-a3e0e8360fe5",
+                        "https://github.com/uOttawaSEGA2023/Medihub/assets/75919484/2464e7d1-9037-40a2-a7f0-9f665480d77a",
+                        "https://github.com/uOttawaSEGA2023/Medihub/assets/75919484/59901b8d-b60a-431d-9725-7cbe5bac757f"
+                    ],
+                    "links": {
+                        "Github": "https://github.com/uOttawaSEGA2023/Medihub"
+                    }
+                },
                 "Expense_Tracker": {
                     "topics": [
                         "HTML",
