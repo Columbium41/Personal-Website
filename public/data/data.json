@@ -1,110 +1,177 @@
 {
     "content": {
         "portfolio": {
-            "technical_skills": [
+            "skills": [
                 {
                     "name": "Java",
                     "tags": [
-                        "Programming Languages"
+                        "Languages"
                     ]
                 },
                 {
                     "name": "Python",
                     "tags": [
-                        "Programming Languages"
+                        "Languages"
                     ]
                 },
                 {
                     "name": "C++",
                     "tags": [
-                        "Programming Languages"
+                        "Languages"
                     ]
                 },
                 {
                     "name": "Ruby",
                     "tags": [
-                        "Programming Languages"
+                        "Languages"
                     ]
                 },
                 {
                     "name": "HTML",
                     "tags": [
-                        "Web Development"
+                        "Languages"
                     ]
                 },
                 {
                     "name": "CSS",
                     "tags": [
-                        "Web Development"
+                        "Languages"
                     ]
                 },
                 {
                     "name": "Javascript",
                     "tags": [
-                        "Programming Languages",
-                        "Web Development"
+                        "Languages"
+                    ]
+                },
+                {
+                    "name": "C#",
+                    "tags": [
+                        "Languages"
                     ]
                 },
                 {
                     "name": "React",
                     "tags": [
-                        "Web Development",
+                        "Libraries"
+                    ]
+                },
+                {
+                    "name": "Framer Motion",
+                    "tags": [
+                        "Libraries"
+                    ]
+                },
+                {
+                    "name": "Tailwind",
+                    "tags": [
+                        "Libraries"
+                    ]
+                },
+                {
+                    "name": "Prisma",
+                    "tags": [
+                        "Libraries",
+                        "Databases"
+                    ]
+                },
+                {
+                    "name": "Chakra UI",
+                    "tags": [
                         "Libraries"
                     ]
                 },
                 {
                     "name": "Node.js",
                     "tags": [
-                        "Web Development",
                         "Frameworks"
                     ]
                 },
                 {
                     "name": "Rails",
                     "tags": [
-                        "Frameworks",
-                        "Web Development"
+                        "Frameworks"
                     ]
                 },
                 {
                     "name": "PostgreSQL",
-                    "tags": ["Databases"] 
+                    "tags": [
+                        "Databases"
+                    ]
                 },
                 {
                     "name": "Android Studio",
                     "tags": [
-                        "Mobile Development"
+                        "Frameworks",
+                        "Dev Tools"
                     ]
-                }
-            ],
-            "dev_tools": [
+                },
+                {
+                    "name": "Next.js",
+                    "tags": [
+                        "Frameworks"
+                    ]
+                },
                 {
                     "name": "VSCode",
-                    "tags": []
+                    "tags": [
+                        "Dev Tools"
+                    ]
                 },
                 {
                     "name": "Github",
-                    "tags": []
+                    "tags": [
+                        "Dev Tools"
+                    ]
                 },
                 {
                     "name": "Git",
-                    "tags": []
-                },
-                {
-                    "name": "Zsh",
-                    "tags": []
+                    "tags": [
+                        "Dev Tools"
+                    ]
                 },
                 {
                     "name": "Netlify",
-                    "tags": []
+                    "tags": [
+                        "Dev Tools"
+                    ]
                 },
                 {
                     "name": "RubyMine",
-                    "tags": []
+                    "tags": [
+                        "Dev Tools"
+                    ]
                 },
                 {
                     "name": "Firebase",
-                    "tags": []
+                    "tags": [
+                        "Dev Tools",
+                        "Databases"
+                    ]
+                },
+                {
+                    "name": "Vercel",
+                    "tags": [
+                        "Dev Tools"
+                    ]
+                },
+                {
+                    "name": "AWS",
+                    "tags": [
+                        "Dev Tools"
+                    ]
+                },
+                {
+                    "name": "Azure",
+                    "tags": [
+                        "Dev Tools"
+                    ]
+                },
+                {
+                    "name": "Webstorm",
+                    "tags": [
+                        "Dev Tools"
+                    ]
                 }
             ],
             "projects": {
@@ -307,7 +374,7 @@
                         },
                         {
                             "start_date": "Sep 2023",
-                            "end_date": null,
+                            "end_date": "Apr 2024",
                             "full_time": false
                         }
                     ],

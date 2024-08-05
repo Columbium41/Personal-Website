@@ -15,8 +15,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.5ch 0;
-    width: calc(20% - calc(0.75ch * 4 / 5));
+    padding: 0.5ch 0;
+    width: calc(calc(100% / 6) - calc(0.75ch * 5 / 6));
     gap: 1ch;
     background: var(--bg-secondary);
     border-radius: 10px;
@@ -53,23 +53,18 @@
 }
 
 /* Adjust number of cards per row in card containers */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
+    .skill-card {
+        width: calc(20% - calc(0.75ch * 4 / 5));
+    }
+}
+@media only screen and (max-width: 490px) {
     .skill-card {
         width: calc(25% - calc(0.75ch * 3 / 4));
     }
 }
-@media only screen and (max-width: 445px) {
+@media only screen and (max-width: 380px) {
     .skill-card {
         width: calc(calc(100% / 3) - calc(0.75ch * 2 / 3));
-    }
-}
-@media only screen and (max-width: 340px) {
-    .skill-card {
-        width: calc(50% - calc(0.75ch * 1 / 2));
-    }
-}
-@media only screen and (min-width: 3000px) {
-    .skill-card {
-        width: calc(calc(100% / 6) - calc(0.75ch * 5 / 6));
     }
 }

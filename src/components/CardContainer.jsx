@@ -12,20 +12,17 @@ function CardContainer({ header, cards }) {
 
     useEffect(() => {
         const width = screen.width;
-        if (width <= 340) {
-            setCardsPerRow(2);
-        }
-        else if (width <= 445) {
+        if (width <= 380) {
             setCardsPerRow(3);
         }
-        else if (width <= 550) {
+        else if (width <= 490) {
             setCardsPerRow(4);
         }
-        else if (width >= 3000) {
-            setCardsPerRow(6);
+        else if (width <= 600) {
+            setCardsPerRow(5);
         }
         else {
-            setCardsPerRow(5);
+            setCardsPerRow(6);
         }
 
         let allTags = new Set();

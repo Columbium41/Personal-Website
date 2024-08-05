@@ -19,8 +19,11 @@ function Home({ data, setDocumentTitle }) {
     const typewriterOptions = data.content.typewriter_options;
 
     // Get each skill listed in the portfolio section 
-    const technicalSkills = data.content.portfolio.technical_skills;
-    const devTools = data.content.portfolio.dev_tools;
+    const skills = data.content.portfolio.skills.sort((a, b) => {
+        if (a.name < b.name) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+    });
 
     const workExperience = data.content.portfolio.work;
 
@@ -82,13 +85,10 @@ function Home({ data, setDocumentTitle }) {
             </div>
 
             {/* Work Experience Section */}
-            <Work data={workExperience}></Work>
+            {/*<Work data={workExperience}></Work>*/}
 
             {/* Programming Skills Section */}
-            <CardContainer header="Technical Skills" cards={technicalSkills} />
-            
-            {/* Dev Tools Section */}
-            <CardContainer header="Dev Tools" cards={devTools} />
+            <CardContainer header="My Skills" cards={skills} />
         </AnimatedPage>
     );
 }

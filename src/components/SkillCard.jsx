@@ -55,7 +55,7 @@ function SkillCard({ skill, cardNumber, cardsPerRow }) {
         >
             {/* Skill Icon */}
             <img 
-              src={"/images/" + skill.toLowerCase().replace(".", "").replace(" ", "_") + ".svg"} 
+              src={"/images/" + encodeURIComponent(skill.toLowerCase().replaceAll(".", "").replaceAll(" ", "_")) + ".svg"}
               alt={skill + " logo"}
               className="icon" 
             />
