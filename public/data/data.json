@@ -170,6 +170,38 @@
                 }
             ],
             "projects": {
+                "MechForum": {
+                    "topics": [
+                        "Next.js",
+                        "PostgreSQL",
+                        "Prisma",
+                        "AWS",
+                        "Chakra UI",
+                        "Tailwind",
+                        "React",
+                        "Vercel"
+                    ],
+                    "topic_thumbnails": [
+                        "Next.js",
+                        "PostgreSQL",
+                        "Prisma",
+                        "AWS",
+                        "Chakra UI",
+                        "Tailwind"
+                    ],
+                    "description": "A web application that allows users to document & share their custom mechanical keyboard builds",
+                    "long_description": "A web application that allows users to document & share their custom mechanical keyboard builds",
+                    "date_created": "May 2024",
+                    "thumbnails": [
+                        "https://github.com/user-attachments/assets/89c65618-e369-4b02-91d2-763c11d4b3cd",
+                        "https://github.com/user-attachments/assets/8e8200b4-5cf7-4464-8c35-a30cdb974f6e",
+                        "https://github.com/user-attachments/assets/6f23bf96-38e8-4d05-8977-7dd0e63f97c9"
+                    ],
+                    "links": {
+                        "Github": "https://github.com/Columbium41/Custom-Keyboard-Builder",
+                        "Website": "https://mechforum.vercel.app/"
+                    }
+                },
                 "Medihub": {
                     "topics": [
                         "Java",
