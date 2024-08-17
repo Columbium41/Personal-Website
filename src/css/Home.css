@@ -28,12 +28,12 @@
     margin: 2ch auto 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 3ch;
+    gap: 1ch;
 }
 .contacts a {
-    width: 20%;
+    width: 15%;
 }
 .contacts img {
     width: 100%;

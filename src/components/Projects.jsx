@@ -15,8 +15,8 @@ function Projects({ data, setDocumentTitle, searchQuery, setSearchQuery }) {
     const allProjects = Object.entries(data.content.portfolio.projects);
 
     const [projects, setProjects] = useState(allProjects);
-    const [tags, setTags] = useState();
-    const [loadingTags, setLoadingTags] = useState(true);
+    // const [tags, setTags] = useState();
+    // const [loadingTags, setLoadingTags] = useState(true);
     const [currentActive, setCurrentActive] = useState(0);
     const [currentFilter, setCurrentFilter] = useState("All");
     const tagContainer = useRef();
@@ -24,17 +24,17 @@ function Projects({ data, setDocumentTitle, searchQuery, setSearchQuery }) {
     useEffect(() => {
         setDocumentTitle("Projects");
 
-        let allTags = new Set();
-        allTags.add("All");
+        // let allTags = new Set();
+        // allTags.add("All");
 
-        projects.forEach((project) => {
-            project[1].topic_thumbnails.forEach((topic) => {
-                allTags.add(topic);
-            });
-        });
-        setTags(Array.from(allTags));
+        // projects.forEach((project) => {
+        //     project[1].topic_thumbnails.forEach((topic) => {
+        //         allTags.add(topic);
+        //     });
+        // });
+        // setTags(Array.from(allTags));
 
-        setLoadingTags(false);
+        // setLoadingTags(false);
     }, [])
 
     // Use effect to show different projects when search query is changed
@@ -61,7 +61,7 @@ function Projects({ data, setDocumentTitle, searchQuery, setSearchQuery }) {
             />
 
             {/* Tags Filter */}
-            { !loadingTags && tags !== undefined &&
+            {/* { !loadingTags && tags !== undefined &&
             <div className="tags-container" ref={tagContainer}>
                 {tags.map((tag, index) => (
                     <button
@@ -77,7 +77,7 @@ function Projects({ data, setDocumentTitle, searchQuery, setSearchQuery }) {
                             { tag }
                     </button>
                 ))}
-            </div>}
+            </div>} */}
 
             <div className="card-container-grid">
                 {/* Dynamically render each project as a <ProjectCard></ProjectCard> component */}
