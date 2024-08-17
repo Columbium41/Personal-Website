@@ -85,7 +85,7 @@ function Home({ data, setDocumentTitle }) {
             </div>
 
             {/* Work Experience Section */}
-            {/*<Work data={workExperience}></Work>*/}
+            <Work data={workExperience}></Work>
 
             {/* Programming Skills Section */}
             <CardContainer header="My Skills" cards={skills} />

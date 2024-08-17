@@ -1,6 +1,7 @@
 import '../css/Work.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
+import UseItem from './UseItem';
 
 function WorkCard({ position }) {
     const [isClicked, setIsClicked] = useState(false);
@@ -25,7 +26,7 @@ function WorkCard({ position }) {
             </div>
             <div className="uses">
                 {position.uses.map((use, index) => (
-                    <img src={"/images/" + use.toLowerCase().replace(".", "").replace(" ", "_") + ".svg"} alt={use + " logo"} key={index} />
+                    <UseItem use={use} key={index} />
                 ))}
             </div>
             {/*<AnimatePresence>*/}

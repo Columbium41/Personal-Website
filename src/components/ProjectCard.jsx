@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import UseItem from "./UseItem";
 
 const projectCardVariants = {
     hidden: {
@@ -58,7 +59,7 @@ function ProjectCard({ project }) {
                     {/* Project icons */}
                     <div className="project-icons">
                         {projectData.topic_thumbnails.map((topic, index) => (
-                            <img src={"/images/" + topic.toLowerCase().replace(".", "").replace(" ", "_") + ".svg"} alt={topic + " logo"} key={index} />
+                            <UseItem use={topic} key={index} />
                         ))}
                     </div>
                 </div>

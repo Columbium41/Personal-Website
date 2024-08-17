@@ -113,12 +113,6 @@
                     ]
                 },
                 {
-                    "name": "VSCode",
-                    "tags": [
-                        "Dev Tools"
-                    ]
-                },
-                {
                     "name": "Github",
                     "tags": [
                         "Dev Tools"
@@ -126,18 +120,6 @@
                 },
                 {
                     "name": "Git",
-                    "tags": [
-                        "Dev Tools"
-                    ]
-                },
-                {
-                    "name": "Netlify",
-                    "tags": [
-                        "Dev Tools"
-                    ]
-                },
-                {
-                    "name": "RubyMine",
                     "tags": [
                         "Dev Tools"
                     ]
@@ -168,7 +150,20 @@
                     ]
                 },
                 {
-                    "name": "Webstorm",
+                    "name": "Dataverse",
+                    "tags": [
+                        "Dev Tools",
+                        "Databases"
+                    ]
+                },
+                { 
+                    "name": "PowerBI",
+                    "tags": [
+                        "Dev Tools"
+                    ]
+                },
+                {
+                    "name": "Power Apps",
                     "tags": [
                         "Dev Tools"
                     ]
@@ -364,7 +359,26 @@
             },
             "work": [
                 {
-                    "role": "Full Stack Developer",
+                    "role": "IT & Platform Support",
+                    "employer": "National Research Council Canada",
+                    "dates": [
+                        {
+                            "start_date": "May 2024",
+                            "end_date": "Aug 2024",
+                            "full_time": true
+                        }
+                    ],
+                    "uses": [
+                        "Azure",
+                        "C#",
+                        "Python",
+                        "PowerBI",
+                        "Power Apps",
+                        "Dataverse"
+                    ]
+                },
+                {
+                    "role": "Full-Stack Developer",
                     "employer": "University of Ottawa - CEED",
                     "dates": [
                         {
@@ -385,13 +399,6 @@
                         "Ruby",
                         "Rails",
                         "PostgreSQL"
-                    ],
-                    "key_points": [
-                        "Maintained & implemented requested features for a Rails web app within a small team",
-                        "Utilized HTML forms and Rails controllers to create and update data within a PostgreSQL database",
-                        "Communicated with managers and supervisors on a weekly basis to document various requirements",
-                        "Followed & maintained industry standards with branching strategies, CI/CD, and staging/test servers",
-                        "Ensured code and logic was maintained properly through the use of tests & specs"
                     ]
                 }
             ]

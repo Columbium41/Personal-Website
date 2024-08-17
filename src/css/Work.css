@@ -17,6 +17,7 @@
     row-gap: 0.75ch;
     overflow: hidden;
     transition: border 0.5s;
+    overflow: visible;
 }
 
 .position-card:hover {
