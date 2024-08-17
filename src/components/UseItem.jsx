@@ -16,7 +16,7 @@ export default function UseItem({ use }) {
             />
             { isHovered && (
                 <div className="use-item-overlay">
-                    { use }
+                    { decodeURIComponent(use) }
                 </div>
             ) }
         </div>

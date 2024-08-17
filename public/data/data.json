@@ -45,7 +45,7 @@
                     ]
                 },
                 {
-                    "name": "C#",
+                    "name": "C%23",
                     "tags": [
                         "Languages"
                     ]
@@ -402,7 +402,7 @@
                     ],
                     "uses": [
                         "Azure",
-                        "C#",
+                        "C%23",
                         "Python",
                         "PowerBI",
                         "Power Apps",

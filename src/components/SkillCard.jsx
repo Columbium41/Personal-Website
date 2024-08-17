@@ -61,7 +61,7 @@ function SkillCard({ skill, cardNumber, cardsPerRow }) {
             />
 
             {/* Skill name */}
-            <p>{skill}</p>
+            <p>{decodeURIComponent(skill)}</p>
         </motion.div>
     )
 }
