@@ -37,10 +37,10 @@ function Home({ data, setDocumentTitle }) {
             {/* Profile + Typewriter */}
             <div className="profile w-100">
                 <div>
-                    <h1>Charley Liu</h1>
+                    <h1>Hi 👋, <br />I'm Charley</h1>
 
                     <span className="typewriter">
-                        {'> '}
+                        {'I\'m a '}
                         <Typewriter 
                           className="typewriter" 
                           words={typewriterOptions} 
@@ -60,11 +60,9 @@ function Home({ data, setDocumentTitle }) {
                 <h2 className="section-header">About Me</h2>
 
                 <p>
-                    Hello I'm Charley, a second year Computer Science student at the University of Ottawa.
                     I'm currently pursuing a Co-op Computer Science degree while also learning web development on the side.
-                    Some of my non-coding related hobbies are listening to music and playing tabletop/online games.
-                    When I have free time, 
-                    I like to create <Link to="/projects" className="text-link">personal projects</Link> to enhance my programming and design skills. <br></br><br></br>
+                    Some of my non-coding related hobbies are listening to music, exercising, and playing games.
+                    I also like to create <Link to="/projects" className="text-link">personal projects</Link> to enhance my programming and design skills, definitely check some out! <br></br><br></br>
                     If you like what I do or want to get in touch, please consider reaching out to me on any of these platforms:
                 </p>
 
