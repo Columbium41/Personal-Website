@@ -167,6 +167,18 @@
                     "tags": [
                         "Dev Tools"
                     ]
+                },
+                {
+                    "name": "Express",
+                    "tags": ["Frameworks"]
+                },
+                {
+                    "name": "Redux",
+                    "tags": ["Libraries"]
+                },
+                {
+                    "name": "DynamoDB",
+                    "tags": ["Databases"]
                 }
             ],
             "projects": {
@@ -390,6 +402,25 @@
                 }
             },
             "work": [
+                {
+                    "role": "Full-Stack Cloud Developer",
+                    "employer": "Signiant",
+                    "dates": [
+                        {
+                            "start_date": "Jan 2025",
+                            "end_date": "Apr 2025",
+                            "full_time": true
+                        }
+                    ],
+                    "uses": [
+                        "React",
+                        "Redux",
+                        "Express",
+                        "DynamoDB",
+                        "Lambda",
+                        "EC2"
+                    ]
+                },
                 {
                     "role": "IT & Platform Support",
                     "employer": "National Research Council Canada",
