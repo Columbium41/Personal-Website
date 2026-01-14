@@ -179,6 +179,36 @@
                 {
                     "name": "DynamoDB",
                     "tags": ["Databases"]
+                },
+                {
+                    "name": "MySql",
+                    "tags": [
+                        "Databases"
+                    ]
+                },
+                {
+                    "name": "PHP",
+                    "tags": [
+                        "Languages"
+                    ]
+                },
+                {
+                    "name": "Laravel",
+                    "tags": [
+                        "Frameworks"
+                    ]
+                },
+                {
+                    "name": "Wordpress",
+                    "tags": [
+                        "Frameworks"
+                    ]
+                },
+                {
+                    "name": "Behat",
+                    "tags": [
+                        "Frameworks"
+                    ]
                 }
             ],
             "projects": {
@@ -402,6 +432,25 @@
                 }
             },
             "work": [
+                {
+                    "role": "Web Developer",
+                    "employer": "Bank of Canada",
+                    "dates": [
+                        {
+                            "start_date": "Sep 2025",
+                            "end_date": "Dec 2025",
+                            "full_time": true
+                        }
+                    ],
+                    "uses": [
+                        "PHP",
+                        "Wordpress",
+                        "Behat",
+                        "React",
+                        "MySQL",
+                        "Laravel"
+                    ]
+                },
                 {
                     "role": "Full-Stack Cloud Developer",
                     "employer": "Signiant",
