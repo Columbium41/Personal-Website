@@ -23,10 +23,6 @@ I created this website using Vite, React, and Nodejs. Additionally, I deployed m
  - Animating page transitions and components in React with Framer Motion
  - Configuring Custom domains with Netlify
 
-## What's next
-- Integrating Github API or webhooks to load project data
-- Creating an API to fetch portfolio data
-- Adding a work experience section (once I get relevant work experience 😅)
-
 ## Link
 - [https://charleyliu.ca](https://charleyliu.ca)
+
