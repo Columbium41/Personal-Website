@@ -433,6 +433,25 @@
             },
             "work": [
                 {
+                    "role": "Intern Software Developer",
+                    "employer": "TeachWorks",
+                    "dates": [
+                        {
+                            "start_date": "May 2026",
+                            "end_date": "Aug 2026",
+                            "full_time": true
+                        }
+                    ],
+                    "uses": [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "Ruby",
+                        "Rails",
+                        "MySQL"
+                    ]
+                },
+                {
                     "role": "Web Developer",
                     "employer": "Bank of Canada",
                     "dates": [
